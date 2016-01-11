@@ -1,0 +1,16 @@
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.exe.config
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.exe
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.pdb
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.csprojResolveAssemblyReference.cache
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Properties.Resources.resources
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.csproj.GenerateResource.Cache
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.exe
+c:\users\nicholas dinh\documents\visual studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.pdb
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.CRForm.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.MainMenu.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.NewMonster.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.AttackForm.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.AbilityForm.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.MonsterInfo.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellorAttackForm.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellsForm.resources

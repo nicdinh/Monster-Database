@@ -1,0 +1,26 @@
+NEWMONSTER
+Name: Mage, Size: Medium, Health: 40, AC: 12, Speed: 30
+Str: 9, Dex: 14, Con: 11, Int: 17, Wis: 12, Char: 11
+Saving Throw: Str: -1, Dex: 2, Con: 0, Int: 6, Wis: 4, Char: 0
+Resistance: None
+Immunity: None
+Sense: passive Perception 11
+Language: any four languages
+Athletics: -1
+Acrobatics: 2, Sleight: 2, Stealth: 2
+Arcana: 6, History: 6, Investigation: 3, Nature: 3, Religion: 3
+Animal: 1, Insight: 1, Medicine: 1, Perception: 1, Survival: 1
+Deception: 0, Intimidation: 0, Performance: 0, Persuasion: 0
+Challenge: 6, Experience: 2300
+Spellcasting. Spell Save DC 14, 6 to Hit with Spell Attacks
+Cantrips (at will): Fire Bolt, Light, Mage Hand, Prestidigitation
+1 Level (4 slots): Detect Magic, Mage Armor, Magic Missile, Shield
+2 Level (3 slots): Misty Step, Suggestion
+3 Level (3 slots): Counterspell, Fireball, Fly
+4 Level (3 slots): Greater Invisibility, Ice Storm
+5 Level (1 slots): Cone of Cold
+Dagger. Melee Attack: +5 to Hit, reach 5 ft
+Hit: 1d4+2 piercing
+Dagger. Range Attack: +5 to Hit, reach 20/60 ft
+Hit: 1d4+2 piercing
+

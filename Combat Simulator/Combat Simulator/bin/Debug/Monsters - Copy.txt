@@ -1,0 +1,35 @@
+NEWMONSTER
+Name: Kobold, Size: Small, Health: 5, AC: 12, Speed: 30
+Str: 7, Dex: 15, Con: 9, Int: 8, Wis: 7, Char: 8
+Resistance: None
+Immunity: None
+Sense: darkvision 60ft., passive Perception 8
+Language: Common, Draconic
+Athletics: -2
+Acrobatics: 2, Sleight: 2, Stealth: 2
+Arcana: -1, History: -1, Investigation: -1, Nature: -1, Religion: -1
+Animal: -2, Insight: -2, Medicine: -2, Perception: -2, Survival: -2
+Deception: -1, Intimidation: -1, Performance: -1, Persuasion: -1
+Challenge: 0.125, Experience: 25
+Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+Pack Tactics. The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated.
+Dagger. Melee Attack: +4 to Hit, reach 5 ft
+Hit: 1d4+2 piercing
+Sling. Range Attack: +4 to Hit, reach 30/120 ft
+Hit: 1d4+2 bludgeoning
+
+
+Name, Size-1
+Max Health, Health, Bloody, AC - 2
+Speed -3
+Stats -4
+Modifier -5/6
+Resistance, Immunity
+Sense, Lanuage - 7
+Train Skills
+Challenge, Experience - 8
+Ability
+Spells
+Attacks
+Status Effects
+
