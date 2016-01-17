@@ -60,6 +60,12 @@
       <DependentUpon>AttackForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Actions.cs" />
+    <Compile Include="CreateMonster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMonster.Designer.cs">
+      <DependentUpon>CreateMonster.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AttackForm.resx">
       <DependentUpon>AttackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMonster.resx">
+      <DependentUpon>CreateMonster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CRForm.resx">
       <DependentUpon>CRForm.cs</DependentUpon>

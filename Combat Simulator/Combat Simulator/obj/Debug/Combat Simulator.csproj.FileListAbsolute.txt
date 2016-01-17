@@ -14,3 +14,5 @@ C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Co
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.MonsterInfo.resources
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellorAttackForm.resources
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellsForm.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Test.resources
+C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.CreateMonster.resources
