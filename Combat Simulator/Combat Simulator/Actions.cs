@@ -8,7 +8,8 @@ namespace Combat_Simulator
 {
     public class Actions
     {
-        public string[][] Spells=new string[10][];
+        //public string[][] Spells=new string[10][];
+        public Spells[][] Spells = new Spells[10][];
         public int SpellMod;
         public int SpellDC;
         public int[] SpellSlots = new int[10] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -18,21 +19,22 @@ namespace Combat_Simulator
         public int[] Normal;
         public int[] Max;
         public string[] Damage;
+        public string[] Info; 
         public bool Contains=false;
 
         public Actions()
         {
         }
 
-        public void AddSpells(string Input, int Level)
+        public void AddSpells(Spells Input, int Level)
         {
             if (this.Spells[Level] == null)
             {
-                this.Spells[Level] = new String[1] { Input };
+                this.Spells[Level] = new Spells[1] { Input };
             }
             else
             {
-                string[] temp = new String[this.Spells[Level].Length + 1];
+                Spells[] temp = new Spells[this.Spells[Level].Length + 1];
                 for (int x = 0; x < this.Spells[Level].Length; x++)
                 {
                     temp[x] = this.Spells[Level][x];
@@ -65,7 +67,7 @@ namespace Combat_Simulator
             this.SpellDC = spellDC;
         }
 
-        public void AddMeleeAttack(string attack, int attackMod, string damage, int range)
+        public void AddMeleeAttack(string attack, int attackMod, string damage, int range, string info)
         {
             if (this.Attacks == null)
             {
@@ -75,6 +77,7 @@ namespace Combat_Simulator
                 this.Normal = new int[1] {5};
                 this.Max = new int[1] {5};
                 this.Damage = new string[1] {damage};
+                this.Info = new string[1] {info};
             }
             else
             {
@@ -84,6 +87,7 @@ namespace Combat_Simulator
                 int[] tempNormal = new int[this.Normal.Length + 1];
                 int[] tempMax = new int[this.Max.Length + 1];
                 string[] tempDamage = new String[this.Damage.Length + 1];
+                string[] tempInfo = new String[this.Damage.Length + 1];
 
                 for (int x = 0; x < this.Attacks.Length; x++)
                 {
@@ -93,6 +97,7 @@ namespace Combat_Simulator
                     tempNormal[x] = this.Normal[x];
                     tempMax[x] = this.Max[x];
                     tempDamage[x] = this.Damage[x];
+                    tempInfo[x] = this.Info[x];
                 }
                 tempAttack[this.Attacks.Length] = attack;
                 tempAttackMod[this.Attacks.Length] = attackMod;
@@ -100,6 +105,7 @@ namespace Combat_Simulator
                 tempNormal[this.Attacks.Length] = range;
                 tempMax[this.Attacks.Length] = range;
                 tempDamage[this.Attacks.Length] = damage;
+                tempInfo[this.Attacks.Length] = info;
 
                 this.Attacks = tempAttack;
                 this.AttackMod = tempAttackMod;
@@ -107,11 +113,12 @@ namespace Combat_Simulator
                 this.Normal = tempNormal;
                 this.Max = tempMax;
                 this.Damage = tempDamage;
+                this.Info = tempInfo;
             }
             this.Contains = true;
         }
 
-        public void AddRangeAttack(string attack, int attackMod,int normal, int max, string damage)
+        public void AddRangeAttack(string attack, int attackMod,int normal, int max, string damage, string info)
         {
             if (this.Attacks == null)
             {
@@ -121,6 +128,7 @@ namespace Combat_Simulator
                 this.Normal = new int[1] { normal };
                 this.Max = new int[1] { max };
                 this.Damage = new string[1] { damage };
+                this.Info = new string[1] { info };
             }
             else
             {
@@ -130,6 +138,7 @@ namespace Combat_Simulator
                 int[] tempNormal = new int[this.Normal.Length + 1];
                 int[] tempMax = new int[this.Max.Length + 1];
                 string[] tempDamage = new String[this.Damage.Length + 1];
+                string[] tempInfo = new String[this.Info.Length + 1];
 
                 for (int x = 0; x < this.Attacks.Length; x++)
                 {
@@ -139,6 +148,7 @@ namespace Combat_Simulator
                     tempNormal[x] = this.Normal[x];
                     tempMax[x] = this.Max[x];
                     tempDamage[x] = this.Damage[x];
+                    tempInfo[x] = this.Info[x];
                 }
                 tempAttack[this.Attacks.Length] = attack;
                 tempAttackMod[this.Attacks.Length] = attackMod;
@@ -146,6 +156,7 @@ namespace Combat_Simulator
                 tempNormal[this.Attacks.Length] = normal;
                 tempMax[this.Attacks.Length] = max;
                 tempDamage[this.Attacks.Length] = damage;
+                tempInfo[this.Attacks.Length] = info;
 
                 this.Attacks = tempAttack;
                 this.AttackMod = tempAttackMod;
@@ -153,6 +164,7 @@ namespace Combat_Simulator
                 this.Normal = tempNormal;
                 this.Max = tempMax;
                 this.Damage = tempDamage;
+                this.Info = tempInfo;
             }
             this.Contains = true;
         }

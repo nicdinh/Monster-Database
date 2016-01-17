@@ -16,3 +16,21 @@ C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Co
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellsForm.resources
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Test.resources
 C:\Users\Nicholas Dinh\Documents\Visual Studio 2013\Projects\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.CreateMonster.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.exe.config
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.exe
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.pdb
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.exe
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\bin\Debug\Combat Simulator.pdb
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.csprojResolveAssemblyReference.cache
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.AbilityForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.AttackForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.CreateMonster.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.CRForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.MainMenu.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.MonsterInfo.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.NewMonster.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Properties.Resources.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellorAttackForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellsForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Test.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.csproj.GenerateResource.Cache

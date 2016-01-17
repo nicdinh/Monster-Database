@@ -378,10 +378,10 @@ namespace Combat_Simulator
 
                             while(temp.Contains(","))
                             {
-                                newAction.AddSpells(temp.Substring(1, temp.IndexOf(",")-1), x);
+                                //newAction.AddSpells(temp.Substring(1, temp.IndexOf(",")-1), x);
                                 temp = temp.Substring(temp.IndexOf(",") + 1);
                             }
-                            newAction.AddSpells(temp.Substring(1),x);
+                            //newAction.AddSpells(temp.Substring(1),x);
                             line = Rep.ReadLine();
                         }
                         else if(line.Contains("Level"))
@@ -393,10 +393,10 @@ namespace Combat_Simulator
 
                             while (temp.Contains(","))
                             {
-                                newAction.AddSpells(temp.Substring(1, temp.IndexOf(",") - 1), x);
+                                //newAction.AddSpells(temp.Substring(1, temp.IndexOf(",") - 1), x);
                                 temp = temp.Substring(temp.IndexOf(",") + 1);
                             }
-                            newAction.AddSpells(temp.Substring(1), x);
+                            //newAction.AddSpells(temp.Substring(1), x);
                             line = Rep.ReadLine();
                         }
                         else
@@ -450,14 +450,14 @@ namespace Combat_Simulator
 
                     string damage = line;
 
-                    if (range==true)
+                    /*if (range==true)
                     {
                         newAction.AddRangeAttack(name,attackmod,normal,max,damage);
                     }
                     else
                     {
                         newAction.AddMeleeAttack(name,attackmod,damage,normal);
-                    }
+                    }*/
                 }
 
                 newMonster.AddActions(newAction);

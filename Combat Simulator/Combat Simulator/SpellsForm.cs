@@ -144,11 +144,20 @@ namespace Combat_Simulator
 
         private void AddClick(object sender, System.EventArgs e)
         {
-            AllActions.AddSpells(this.NameInput.Text,this.SpellLevel);
+            Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.CastInput.Text,
+                this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
+                this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
+                this.InfoInput.Text);
+
             if (this.LevelList.Text == "Cantrip")
             {
                 Slots[0] = -1;
             }
+
+            //AllActions.AddSpells(this.NameInput.Text,this.SpellLevel);
+            AllActions.AddSpells(newSpell, this.SpellLevel);
+            AllActions.AddSlots(this.Slots);
+            AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
 
             this.NameInput.Text = "";
             this.LevelInput.Text = "";
@@ -158,17 +167,35 @@ namespace Combat_Simulator
 
         private void DoneClick(object sender, System.EventArgs e)
         {
-            AllActions.AddSpells(this.NameInput.Text, this.SpellLevel);
-            AllActions.AddSlots(this.Slots);
-            AllActions.AddSpellMod(int.Parse(this.ModInput.Text),int. Parse(this.DCInput.Text));
+            Spells newSpell = new Spells(int.Parse(this.PageNum.Text),this.NameInput.Text, this.CastInput.Text,
+                this.RangeInput.Text,this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
+                this.RitualInput.Checked,this.Concentration.Checked,this.DurationInput.Text,this.School.Text,
+                this.InfoInput.Text);
+
             if (this.LevelList.Text == "Cantrip")
             {
                 Slots[0] = -1;
             }
 
+            //AllActions.AddSpells(this.NameInput.Text, this.SpellLevel);
+            AllActions.AddSpells(newSpell, this.SpellLevel);
+            AllActions.AddSlots(this.Slots);
+            AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+
             this.Close();
         }
 
+        public void MaterialChecked(object sender, System.EventArgs e)
+        {
+            if (this.MaterialCheck.Checked)
+            {
+                this.MaterialInput.Visible = true;
+            }
+            else
+            {
+                this.MaterialInput.Visible = false;
+            }
 
+        }
     }
 }

@@ -272,7 +272,7 @@
             this.SizeList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.SizeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SizeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SizeList.FormattingEnabled = true;
             this.SizeList.Items.AddRange(new object[] {
             "Tiny",
@@ -283,8 +283,9 @@
             "Gargantuan"});
             this.SizeList.Location = new System.Drawing.Point(710, 83);
             this.SizeList.Name = "SizeList";
-            this.SizeList.Size = new System.Drawing.Size(100, 28);
+            this.SizeList.Size = new System.Drawing.Size(100, 32);
             this.SizeList.TabIndex = 13;
+            this.SizeList.Text = "Medium";
             // 
             // AddCR
             // 
@@ -355,6 +356,7 @@
             this.Done.TabIndex = 18;
             this.Done.Text = "Done";
             this.Done.UseVisualStyleBackColor = true;
+            this.Done.Click += new System.EventHandler(this.DoneClick);
             // 
             // CreateMonster
             // 

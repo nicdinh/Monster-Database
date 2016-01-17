@@ -38,12 +38,20 @@ namespace Combat_Simulator
         {
             if(MeleeButton.Checked==true)
             {
-                AllActions.AddMeleeAttack(this.NameInput.Text, int.Parse(this.AttackModInput.Text), this.DamageInput.Text, int.Parse(this.NormalInput.Text));
+                AllActions.AddMeleeAttack(this.NameInput.Text,
+                    int.Parse(this.AttackModInput.Text),
+                    this.DamageInput.Text + " " + this.DamageDice.Text + " " + this.DamageType,
+                    int.Parse(this.NormalInput.Text),
+                    this.Info.Text);
             }
             else
             {
-                AllActions.AddRangeAttack(this.NameInput.Text, int.Parse(this.AttackModInput.Text), int.Parse(this.NormalInput.Text), int.Parse(this.MaxInput.Text),
-                    this.DamageInput.Text);
+                AllActions.AddRangeAttack(this.NameInput.Text, 
+                    int.Parse(this.AttackModInput.Text), 
+                    int.Parse(this.NormalInput.Text), 
+                    int.Parse(this.MaxInput.Text),
+                    this.DamageInput.Text + " " + this.DamageDice.Text + " " + this.DamageType,
+                    this.Info.Text);
             }
 
             this.Close();
@@ -53,12 +61,20 @@ namespace Combat_Simulator
         {
             if (MeleeButton.Checked == true)
             {
-                AllActions.AddMeleeAttack(this.NameInput.Text, int.Parse(this.AttackModInput.Text), this.DamageInput.Text, int.Parse(this.NormalInput.Text));
+                AllActions.AddMeleeAttack(this.NameInput.Text,
+                    int.Parse(this.AttackModInput.Text),
+                    this.DamageInput.Text + " " + this.DamageDice.Text + " " + this.DamageType,
+                    int.Parse(this.NormalInput.Text),
+                    this.Info.Text);
             }
             else
             {
-                AllActions.AddRangeAttack(this.NameInput.Text, int.Parse(this.AttackModInput.Text), int.Parse(this.NormalInput.Text), int.Parse(this.MaxInput.Text),
-                    this.DamageInput.Text);
+                AllActions.AddRangeAttack(this.NameInput.Text,
+                    int.Parse(this.AttackModInput.Text),
+                    int.Parse(this.NormalInput.Text),
+                    int.Parse(this.MaxInput.Text),
+                    this.DamageInput.Text + " " + this.DamageDice.Text + " " + this.DamageType,
+                    this.Info.Text);
             }
 
             this.NameInput.Text = "";
