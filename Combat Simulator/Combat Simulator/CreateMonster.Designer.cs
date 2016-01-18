@@ -314,6 +314,7 @@
             this.AddAction.TabIndex = 15;
             this.AddAction.Text = "Add Action";
             this.AddAction.UseVisualStyleBackColor = true;
+            this.AddAction.Click += new System.EventHandler(this.AddActionClick);
             // 
             // AddAbility
             // 

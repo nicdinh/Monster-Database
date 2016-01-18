@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Combat_Simulator
 {
-    class Spells
+    public class Spells
     {
         public int PageNum;
         public string Name;

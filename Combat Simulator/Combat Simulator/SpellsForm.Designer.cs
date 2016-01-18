@@ -34,30 +34,30 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.NameInput = new System.Windows.Forms.TextBox();
             this.LevelList = new System.Windows.Forms.ComboBox();
-            this.Done = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
-            this.ModInput = new System.Windows.Forms.TextBox();
-            this.ModLabel = new System.Windows.Forms.Label();
-            this.DCInput = new System.Windows.Forms.TextBox();
-            this.DCLabel = new System.Windows.Forms.Label();
             this.PageLabel = new System.Windows.Forms.Label();
             this.PageNum = new System.Windows.Forms.TextBox();
             this.SchoolLabel = new System.Windows.Forms.Label();
             this.SlotsInput = new System.Windows.Forms.TextBox();
             this.SlotsLabel = new System.Windows.Forms.Label();
             this.School = new System.Windows.Forms.ComboBox();
-            this.MaterialInput = new System.Windows.Forms.TextBox();
-            this.InfoLabel = new System.Windows.Forms.Label();
+            this.Done = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.ModInput = new System.Windows.Forms.TextBox();
+            this.ModLabel = new System.Windows.Forms.Label();
+            this.DCInput = new System.Windows.Forms.TextBox();
+            this.DCLabel = new System.Windows.Forms.Label();
             this.InfoInput = new System.Windows.Forms.TextBox();
+            this.InfoLabel = new System.Windows.Forms.Label();
             this.VerbalInput = new System.Windows.Forms.CheckBox();
             this.SomaticInput = new System.Windows.Forms.CheckBox();
             this.MaterialCheck = new System.Windows.Forms.CheckBox();
+            this.MaterialInput = new System.Windows.Forms.TextBox();
+            this.RitualInput = new System.Windows.Forms.CheckBox();
+            this.Concentration = new System.Windows.Forms.CheckBox();
             this.CastLabel = new System.Windows.Forms.Label();
             this.CastInput = new System.Windows.Forms.TextBox();
             this.RangeLabel = new System.Windows.Forms.Label();
             this.RangeInput = new System.Windows.Forms.TextBox();
-            this.Concentration = new System.Windows.Forms.CheckBox();
-            this.RitualInput = new System.Windows.Forms.CheckBox();
             this.DurationLabel = new System.Windows.Forms.Label();
             this.DurationInput = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
@@ -193,82 +193,6 @@
             this.LevelList.TabIndex = 2;
             this.LevelList.TextChanged += new System.EventHandler(this.LevelChange);
             // 
-            // Done
-            // 
-            this.Done.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Done.Location = new System.Drawing.Point(463, 243);
-            this.Done.Name = "Done";
-            this.Done.Size = new System.Drawing.Size(91, 39);
-            this.Done.TabIndex = 12;
-            this.Done.Text = "Done";
-            this.Done.UseVisualStyleBackColor = true;
-            this.Done.Click += new System.EventHandler(this.DoneClick);
-            // 
-            // Add
-            // 
-            this.Add.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Add.Location = new System.Drawing.Point(371, 243);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(86, 39);
-            this.Add.TabIndex = 11;
-            this.Add.Text = "Add Another";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.AddClick);
-            // 
-            // ModInput
-            // 
-            this.ModInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ModInput.Location = new System.Drawing.Point(279, 243);
-            this.ModInput.Multiline = true;
-            this.ModInput.Name = "ModInput";
-            this.ModInput.Size = new System.Drawing.Size(86, 39);
-            this.ModInput.TabIndex = 10;
-            // 
-            // ModLabel
-            // 
-            this.ModLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ModLabel.AutoSize = true;
-            this.ModLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModLabel.Location = new System.Drawing.Point(187, 240);
-            this.ModLabel.Name = "ModLabel";
-            this.ModLabel.Size = new System.Drawing.Size(86, 45);
-            this.ModLabel.TabIndex = 9;
-            this.ModLabel.Text = "Spell Mod";
-            this.ModLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DCInput
-            // 
-            this.DCInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DCInput.Location = new System.Drawing.Point(95, 243);
-            this.DCInput.Multiline = true;
-            this.DCInput.Name = "DCInput";
-            this.DCInput.Size = new System.Drawing.Size(86, 39);
-            this.DCInput.TabIndex = 8;
-            // 
-            // DCLabel
-            // 
-            this.DCLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DCLabel.AutoSize = true;
-            this.DCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DCLabel.Location = new System.Drawing.Point(3, 240);
-            this.DCLabel.Name = "DCLabel";
-            this.DCLabel.Size = new System.Drawing.Size(86, 45);
-            this.DCLabel.TabIndex = 7;
-            this.DCLabel.Text = "Spell DC";
-            this.DCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // PageLabel
             // 
             this.PageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -355,18 +279,93 @@
             this.School.Size = new System.Drawing.Size(91, 21);
             this.School.TabIndex = 16;
             // 
-            // MaterialInput
+            // Done
             // 
-            this.MaterialInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Done.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.MaterialInput, 3);
-            this.MaterialInput.Location = new System.Drawing.Point(279, 163);
-            this.MaterialInput.Multiline = true;
-            this.MaterialInput.Name = "MaterialInput";
-            this.MaterialInput.Size = new System.Drawing.Size(275, 34);
-            this.MaterialInput.TabIndex = 20;
-            this.MaterialInput.Visible = false;
+            this.Done.Location = new System.Drawing.Point(463, 243);
+            this.Done.Name = "Done";
+            this.Done.Size = new System.Drawing.Size(91, 39);
+            this.Done.TabIndex = 12;
+            this.Done.Text = "Done";
+            this.Done.UseVisualStyleBackColor = true;
+            this.Done.Click += new System.EventHandler(this.DoneClick);
+            // 
+            // Add
+            // 
+            this.Add.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Add.Location = new System.Drawing.Point(371, 243);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(86, 39);
+            this.Add.TabIndex = 11;
+            this.Add.Text = "Add Another";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.AddClick);
+            // 
+            // ModInput
+            // 
+            this.ModInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ModInput.Location = new System.Drawing.Point(279, 243);
+            this.ModInput.Multiline = true;
+            this.ModInput.Name = "ModInput";
+            this.ModInput.Size = new System.Drawing.Size(86, 39);
+            this.ModInput.TabIndex = 10;
+            // 
+            // ModLabel
+            // 
+            this.ModLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ModLabel.AutoSize = true;
+            this.ModLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModLabel.Location = new System.Drawing.Point(187, 240);
+            this.ModLabel.Name = "ModLabel";
+            this.ModLabel.Size = new System.Drawing.Size(86, 45);
+            this.ModLabel.TabIndex = 9;
+            this.ModLabel.Text = "Spell Mod";
+            this.ModLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DCInput
+            // 
+            this.DCInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DCInput.Location = new System.Drawing.Point(95, 243);
+            this.DCInput.Multiline = true;
+            this.DCInput.Name = "DCInput";
+            this.DCInput.Size = new System.Drawing.Size(86, 39);
+            this.DCInput.TabIndex = 8;
+            // 
+            // DCLabel
+            // 
+            this.DCLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DCLabel.AutoSize = true;
+            this.DCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DCLabel.Location = new System.Drawing.Point(3, 240);
+            this.DCLabel.Name = "DCLabel";
+            this.DCLabel.Size = new System.Drawing.Size(86, 45);
+            this.DCLabel.TabIndex = 7;
+            this.DCLabel.Text = "Spell DC";
+            this.DCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // InfoInput
+            // 
+            this.InfoInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.InfoInput, 5);
+            this.InfoInput.Location = new System.Drawing.Point(95, 203);
+            this.InfoInput.Multiline = true;
+            this.InfoInput.Name = "InfoInput";
+            this.InfoInput.Size = new System.Drawing.Size(459, 34);
+            this.InfoInput.TabIndex = 22;
             // 
             // InfoLabel
             // 
@@ -381,18 +380,6 @@
             this.InfoLabel.TabIndex = 21;
             this.InfoLabel.Text = "Info";
             this.InfoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // InfoInput
-            // 
-            this.InfoInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.InfoInput, 5);
-            this.InfoInput.Location = new System.Drawing.Point(95, 203);
-            this.InfoInput.Multiline = true;
-            this.InfoInput.Name = "InfoInput";
-            this.InfoInput.Size = new System.Drawing.Size(459, 34);
-            this.InfoInput.TabIndex = 22;
             // 
             // VerbalInput
             // 
@@ -436,6 +423,46 @@
             this.MaterialCheck.Text = "Material";
             this.MaterialCheck.UseVisualStyleBackColor = true;
             this.MaterialCheck.CheckedChanged += new System.EventHandler(this.MaterialChecked);
+            // 
+            // MaterialInput
+            // 
+            this.MaterialInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.MaterialInput, 3);
+            this.MaterialInput.Location = new System.Drawing.Point(279, 163);
+            this.MaterialInput.Multiline = true;
+            this.MaterialInput.Name = "MaterialInput";
+            this.MaterialInput.Size = new System.Drawing.Size(275, 34);
+            this.MaterialInput.TabIndex = 20;
+            this.MaterialInput.Visible = false;
+            // 
+            // RitualInput
+            // 
+            this.RitualInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RitualInput.AutoSize = true;
+            this.RitualInput.Location = new System.Drawing.Point(371, 123);
+            this.RitualInput.Name = "RitualInput";
+            this.RitualInput.Size = new System.Drawing.Size(86, 34);
+            this.RitualInput.TabIndex = 31;
+            this.RitualInput.Text = "Ritual";
+            this.RitualInput.UseVisualStyleBackColor = true;
+            // 
+            // Concentration
+            // 
+            this.Concentration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Concentration.AutoSize = true;
+            this.Concentration.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Concentration.Location = new System.Drawing.Point(463, 123);
+            this.Concentration.Name = "Concentration";
+            this.Concentration.Size = new System.Drawing.Size(91, 34);
+            this.Concentration.TabIndex = 30;
+            this.Concentration.Text = "Concentration";
+            this.Concentration.UseVisualStyleBackColor = true;
             // 
             // CastLabel
             // 
@@ -488,33 +515,6 @@
             this.RangeInput.Name = "RangeInput";
             this.RangeInput.Size = new System.Drawing.Size(183, 34);
             this.RangeInput.TabIndex = 29;
-            // 
-            // Concentration
-            // 
-            this.Concentration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Concentration.AutoSize = true;
-            this.Concentration.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Concentration.Location = new System.Drawing.Point(463, 123);
-            this.Concentration.Name = "Concentration";
-            this.Concentration.Size = new System.Drawing.Size(91, 34);
-            this.Concentration.TabIndex = 30;
-            this.Concentration.Text = "Concentration";
-            this.Concentration.UseVisualStyleBackColor = true;
-            // 
-            // RitualInput
-            // 
-            this.RitualInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.RitualInput.AutoSize = true;
-            this.RitualInput.Location = new System.Drawing.Point(371, 123);
-            this.RitualInput.Name = "RitualInput";
-            this.RitualInput.Size = new System.Drawing.Size(86, 34);
-            this.RitualInput.TabIndex = 31;
-            this.RitualInput.Text = "Ritual";
-            this.RitualInput.UseVisualStyleBackColor = true;
             // 
             // DurationLabel
             // 

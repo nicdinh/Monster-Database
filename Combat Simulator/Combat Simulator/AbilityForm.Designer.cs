@@ -35,15 +35,7 @@
             this.DescriptionInput = new System.Windows.Forms.TextBox();
             this.AddAnother = new System.Windows.Forms.Button();
             this.Done = new System.Windows.Forms.Button();
-            this.StatsInput = new System.Windows.Forms.DataGridView();
-            this.Str = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Con = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Int = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Wis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Char = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatsInput)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -52,22 +44,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.NameLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.DesLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.NameInput, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.DescriptionInput, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.AddAnother, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.Done, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.StatsInput, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.AddAnother, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Done, 2, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(614, 327);
@@ -96,7 +86,7 @@
             this.DesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DesLabel.Location = new System.Drawing.Point(3, 40);
             this.DesLabel.Name = "DesLabel";
-            this.DesLabel.Size = new System.Drawing.Size(198, 167);
+            this.DesLabel.Size = new System.Drawing.Size(198, 247);
             this.DesLabel.TabIndex = 1;
             this.DesLabel.Text = "Description";
             this.DesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,7 +112,7 @@
             this.DescriptionInput.Location = new System.Drawing.Point(207, 43);
             this.DescriptionInput.Multiline = true;
             this.DescriptionInput.Name = "DescriptionInput";
-            this.DescriptionInput.Size = new System.Drawing.Size(404, 161);
+            this.DescriptionInput.Size = new System.Drawing.Size(404, 241);
             this.DescriptionInput.TabIndex = 3;
             // 
             // AddAnother
@@ -151,56 +141,6 @@
             this.Done.UseVisualStyleBackColor = true;
             this.Done.Click += new System.EventHandler(this.DoneClick);
             // 
-            // StatsInput
-            // 
-            this.StatsInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.StatsInput.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.StatsInput.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StatsInput.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Str,
-            this.Dex,
-            this.Con,
-            this.Int,
-            this.Wis,
-            this.Char});
-            this.tableLayoutPanel1.SetColumnSpan(this.StatsInput, 3);
-            this.StatsInput.Location = new System.Drawing.Point(3, 210);
-            this.StatsInput.Name = "StatsInput";
-            this.StatsInput.Size = new System.Drawing.Size(608, 74);
-            this.StatsInput.TabIndex = 6;
-            // 
-            // Str
-            // 
-            this.Str.HeaderText = "Strength";
-            this.Str.Name = "Str";
-            // 
-            // Dex
-            // 
-            this.Dex.HeaderText = "Dexterity";
-            this.Dex.Name = "Dex";
-            // 
-            // Con
-            // 
-            this.Con.HeaderText = "Constitution";
-            this.Con.Name = "Con";
-            // 
-            // Int
-            // 
-            this.Int.HeaderText = "Intelligence";
-            this.Int.Name = "Int";
-            // 
-            // Wis
-            // 
-            this.Wis.HeaderText = "Wisdom";
-            this.Wis.Name = "Wis";
-            // 
-            // Char
-            // 
-            this.Char.HeaderText = "Charisma";
-            this.Char.Name = "Char";
-            // 
             // AbilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,7 +151,6 @@
             this.Text = "Ability";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StatsInput)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,12 +164,5 @@
         private System.Windows.Forms.TextBox DescriptionInput;
         private System.Windows.Forms.Button AddAnother;
         private System.Windows.Forms.Button Done;
-        private System.Windows.Forms.DataGridView StatsInput;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Str;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Con;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Int;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Wis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Char;
     }
 }

@@ -50,94 +50,96 @@ namespace Combat_Simulator
 
                 Monster newCreature = new Monster(this.NameInput.Text, this.SizeInput.Text, Convert.ToInt16(this.ACInput.Text), Str, Dex, Con, Int, Wis, Char,
                                                     Convert.ToInt16(this.HealthInput.Text), Convert.ToInt16(this.HealthInput.Text), this.SpeedInput.Text,
-                                                    int.Parse(this.AthleticsInput.Text), int.Parse(this.AcrobaticsInput.Text),int.Parse(this.SleightInput.Text),
-                                                    int.Parse(this.StealthInput.Text),int.Parse(this.ArcanaInput.Text),int.Parse(this.HistoryInput.Text),
-                                                    int.Parse(this.InvestigationInput.Text),int.Parse(this.NatureInput.Text),int.Parse(this.ReligionInput.Text),
-                                                    int.Parse(this.AnimalInput.Text),int.Parse(this.InsightInput.Text),int.Parse(this.MedicineInput.Text),
-                                                    int.Parse(this.PerceptionInput.Text),int.Parse(this.SurvivalInput.Text),int.Parse(this.DeceptionInput.Text),
-                                                    int.Parse(this.IntimidationInput.Text),int.Parse(this.PerformanceInput.Text),int.Parse(this.PersuasionInput.Text),
-                                                    this.LanguagesInput.Text,this.ResistanceInput.Text,this.ImmunityInput.Text,this.SenseInput.Text);
-
-
-                if (this.Abilitywindow.Throws==true)
-                {
-                    int ThrowStr;
-                    int ThrowDex;
-                    int ThrowCon;
-                    int ThrowInt;
-                    int ThrowWis;
-                    int ThrowChar;
-
-                    if (this.Abilitywindow.ThrowStr!=-10)
-                    {
-                        ThrowStr = this.Abilitywindow.ThrowStr;
-                    }
-                    else
-                    {
-                        ThrowStr = (int)Math.Floor((Str - 10) / 2.0);
-                    }
-
-                    if (this.Abilitywindow.ThrowDex != -10)
-                    {
-                        ThrowDex = this.Abilitywindow.ThrowDex;
-                    }
-                    else
-                    {
-                        ThrowDex = (int)Math.Floor((Dex - 10) / 2.0);
-                    }
-
-                    if (this.Abilitywindow.ThrowCon != -10)
-                    {
-                        ThrowCon = this.Abilitywindow.ThrowCon;
-                    }
-                    else
-                    {
-                        ThrowCon = (int)Math.Floor((Con - 10) / 2.0);
-                    }
-
-                    if (this.Abilitywindow.ThrowInt != -10)
-                    {
-                        ThrowInt = this.Abilitywindow.ThrowInt;
-                    }
-                    else
-                    {
-                        ThrowInt = (int)Math.Floor((Int - 10) / 2.0);
-                    }
-
-                    if (this.Abilitywindow.ThrowWis != -10)
-                    {
-                        ThrowWis = this.Abilitywindow.ThrowWis;
-                    }
-                    else
-                    {
-                        ThrowWis = (int)Math.Floor((Wis - 10) / 2.0);
-                    }
-
-                    if (this.Abilitywindow.ThrowChar != -10)
-                    {
-                        ThrowChar = this.Abilitywindow.ThrowChar;
-                    }
-                    else
-                    {
-                        ThrowChar = (int)Math.Floor((Char - 10) / 2.0);
-                    }
-
-                    newCreature.AddThrow(ThrowStr, ThrowDex, ThrowCon, ThrowInt, ThrowWis, ThrowChar);
-                }
-
-                newCreature.AddCR(CRwindow.challenge, CRwindow.experience);
-
-                CombatLog.Rows.Add(newCreature.ReturnArray());
-
-                newCreature.AddAbility(AllAbility);
-
-                newCreature.AddActions(AllActions);
-
-                newCreature.EnterDatabase();
+                                                    int.Parse(this.AthleticsInput.Text), int.Parse(this.AcrobaticsInput.Text), int.Parse(this.SleightInput.Text),
+                                                    int.Parse(this.StealthInput.Text), int.Parse(this.ArcanaInput.Text), int.Parse(this.HistoryInput.Text),
+                                                    int.Parse(this.InvestigationInput.Text), int.Parse(this.NatureInput.Text), int.Parse(this.ReligionInput.Text),
+                                                    int.Parse(this.AnimalInput.Text), int.Parse(this.InsightInput.Text), int.Parse(this.MedicineInput.Text),
+                                                    int.Parse(this.PerceptionInput.Text), int.Parse(this.SurvivalInput.Text), int.Parse(this.DeceptionInput.Text),
+                                                    int.Parse(this.IntimidationInput.Text), int.Parse(this.PerformanceInput.Text), int.Parse(this.PersuasionInput.Text),
+                                                    this.LanguagesInput.Text, this.ResistanceInput.Text, this.ImmunityInput.Text, this.SenseInput.Text);
             }
-
-            this.Close();
         }
+
+
+        //        if (this.Abilitywindow.Throws==true)
+        //        {
+        //            int ThrowStr;
+        //            int ThrowDex;
+        //            int ThrowCon;
+        //            int ThrowInt;
+        //            int ThrowWis;
+        //            int ThrowChar;
+
+        //            if (this.Abilitywindow.ThrowStr!=-10)
+        //            {
+        //                ThrowStr = this.Abilitywindow.ThrowStr;
+        //            }
+        //            else
+        //            {
+        //                ThrowStr = (int)Math.Floor((Str - 10) / 2.0);
+        //            }
+
+        //            if (this.Abilitywindow.ThrowDex != -10)
+        //            {
+        //                ThrowDex = this.Abilitywindow.ThrowDex;
+        //            }
+        //            else
+        //            {
+        //                ThrowDex = (int)Math.Floor((Dex - 10) / 2.0);
+        //            }
+
+        //            if (this.Abilitywindow.ThrowCon != -10)
+        //            {
+        //                ThrowCon = this.Abilitywindow.ThrowCon;
+        //            }
+        //            else
+        //            {
+        //                ThrowCon = (int)Math.Floor((Con - 10) / 2.0);
+        //            }
+
+        //            if (this.Abilitywindow.ThrowInt != -10)
+        //            {
+        //                ThrowInt = this.Abilitywindow.ThrowInt;
+        //            }
+        //            else
+        //            {
+        //                ThrowInt = (int)Math.Floor((Int - 10) / 2.0);
+        //            }
+
+        //            if (this.Abilitywindow.ThrowWis != -10)
+        //            {
+        //                ThrowWis = this.Abilitywindow.ThrowWis;
+        //            }
+        //            else
+        //            {
+        //                ThrowWis = (int)Math.Floor((Wis - 10) / 2.0);
+        //            }
+
+        //            if (this.Abilitywindow.ThrowChar != -10)
+        //            {
+        //                ThrowChar = this.Abilitywindow.ThrowChar;
+        //            }
+        //            else
+        //            {
+        //                ThrowChar = (int)Math.Floor((Char - 10) / 2.0);
+        //            }
+
+        //            newCreature.AddThrow(ThrowStr, ThrowDex, ThrowCon, ThrowInt, ThrowWis, ThrowChar);
+        //        }
+
+        //        newCreature.AddCR(CRwindow.challenge, CRwindow.experience);
+
+        //        CombatLog.Rows.Add(newCreature.ReturnArray());
+
+        //        newCreature.AddAbility(AllAbility);
+
+        //        newCreature.AddActions(AllActions);
+
+        //        newCreature.EnterDatabase();
+        //    }
+
+        //    this.Close();
+        //}
 
         public void CRClick(object sender, System.EventArgs e)
         {
@@ -159,7 +161,7 @@ namespace Combat_Simulator
         public void AbilityClick(object sender, System.EventArgs e)
         {
             // Add event handler code here.
-            Abilitywindow = new AbilityForm(ref AllAbility);
+            Abilitywindow = new AbilityForm();
 
             Abilitywindow.Show();
         }

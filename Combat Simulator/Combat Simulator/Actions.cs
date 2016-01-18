@@ -21,6 +21,8 @@ namespace Combat_Simulator
         public string[] Damage;
         public string[] Info; 
         public bool Contains=false;
+        public LegendaryActions[] Legend;
+        public int LegendPoints;
 
         public Actions()
         {
@@ -250,6 +252,40 @@ namespace Combat_Simulator
             }
 
             return output;
+        }
+
+        public void AddLegendary(LegendaryActions input)
+        {
+            if (this.Legend.Length==0)
+            {
+                this.Legend = new LegendaryActions[1] { input };
+            }
+            else
+            {
+                LegendaryActions[] temp = new LegendaryActions[this.Legend.Length + 1];
+
+                for (int x = 0; x < this.Attacks.Length; x++)
+                {
+                    temp[x] = this.Legend[x];
+                }
+                temp[this.Legend.Length] = input;
+
+                this.Legend = temp;
+            }
+        }
+    }
+
+    public class LegendaryActions
+    {
+        public string Name;
+        public string Description;
+        public int Cost;
+
+        public LegendaryActions(string name, string description, int cost)
+        {
+            this.Name = name;
+            this.Description = description;
+            this.Cost = cost;
         }
     }
 }

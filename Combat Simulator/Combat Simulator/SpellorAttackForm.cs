@@ -35,5 +35,13 @@ namespace Combat_Simulator
             window.Show();
             this.Close();
         }
+
+        private void LegendaryClick(object sender, EventArgs e)
+        {
+            LegendaryForm window = new LegendaryForm(ref AllActions);
+
+            window.Show();
+            this.Close();
+        }
     }
 }

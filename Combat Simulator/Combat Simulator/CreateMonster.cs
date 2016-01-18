@@ -62,12 +62,16 @@ namespace Combat_Simulator
 
         public void AddActionClick(object sender, System.EventArgs e)
         {
+            Actionwindow = new SpellorAttackForm(ref AllActions);
 
+            Actionwindow.Show();
         }
 
         public void AddAbilityClick(object sender, System.EventArgs e)
         {
+            Abilitywindow = new AbilityForm();
 
+            Abilitywindow.Show();
         }
 
         public void PreviewClick(object sender, System.EventArgs e)
