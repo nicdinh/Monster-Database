@@ -224,6 +224,7 @@
             this.AddStats.TabIndex = 9;
             this.AddStats.Text = "Add Stats";
             this.AddStats.UseVisualStyleBackColor = true;
+            this.AddStats.Click += new System.EventHandler(this.AddStatsClick);
             // 
             // AddThrow
             // 
@@ -238,6 +239,7 @@
             this.AddThrow.TabIndex = 10;
             this.AddThrow.Text = "Add Saving Throws";
             this.AddThrow.UseVisualStyleBackColor = true;
+            this.AddThrow.Click += new System.EventHandler(this.AddThrowClick);
             // 
             // AddSkill
             // 

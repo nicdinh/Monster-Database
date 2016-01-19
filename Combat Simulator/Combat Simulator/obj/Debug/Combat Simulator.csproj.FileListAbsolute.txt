@@ -34,3 +34,5 @@ C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\D
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellsForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.Test.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat Simulator.csproj.GenerateResource.Cache
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.LegendaryForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.StatsForm.resources

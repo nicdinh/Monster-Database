@@ -17,13 +17,15 @@ namespace Combat_Simulator
         public Actions AllActions = new Actions();
         public Abilities AllAbility = new Abilities();
         //public ResistanceForm Resistancewindow;
-        //public StatsForm Statswindow;
         //public ThrowForm Throwwindow;
         //public SkillForm Skillwindow;
         public CRForm CRwindow;
         public SpellorAttackForm Actionwindow;
         public AbilityForm Abilitywindow;
         //public PreviewForm Previewwindow;
+
+        public int[] Stats = new int[6];
+        public int[] Throw = new int[6];
         
         //public 
 
@@ -40,12 +42,16 @@ namespace Combat_Simulator
 
         public void AddStatsClick(object sender, System.EventArgs e)
         {
+            StatsForm Statswindow = new StatsForm("Stats Points",ref this.Stats);
 
+            Statswindow.Show();
         }
 
         public void AddThrowClick(object sender, System.EventArgs e)
         {
+            StatsForm Statswindow = new StatsForm("Throws Modifiers", ref this.Throw);
 
+            Statswindow.Show();
         }
 
         public void AddSkillClick(object sender, System.EventArgs e)
