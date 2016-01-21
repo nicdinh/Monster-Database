@@ -25,6 +25,21 @@ namespace Combat_Simulator
             this.Stats = stats;
         }
 
+        public StatsForm(string name, int[] stats, ref int[] throws)
+        {
+            InitializeComponent();
+            this.NameLabel.Text = name;
+            this.Stats = throws;
+            DataGridViewRow row = (DataGridViewRow)StatsInput.Rows[0].Clone();
+            row.Cells[0].Value = Math.Floor((stats[0] - 10.0) / 2);
+            row.Cells[1].Value = Math.Floor((stats[1] - 10.0) / 2);
+            row.Cells[2].Value = Math.Floor((stats[2] - 10.0) / 2);
+            row.Cells[3].Value = Math.Floor((stats[3] - 10.0) / 2);
+            row.Cells[4].Value = Math.Floor((stats[4] - 10.0) / 2);
+            row.Cells[5].Value = Math.Floor((stats[5] - 10.0) / 2);
+            this.StatsInput.Rows.Add(row);
+        }
+
         public void DoneClick(object sender, System.EventArgs e)
         {
             DataGridViewRow row=this.StatsInput.Rows[0];

@@ -210,6 +210,7 @@
             this.AddResistances.TabIndex = 8;
             this.AddResistances.Text = "Add Resistances/Immunites";
             this.AddResistances.UseVisualStyleBackColor = true;
+            this.AddResistances.Click += new System.EventHandler(this.AddResistancesClick);
             // 
             // AddStats
             // 
@@ -254,6 +255,7 @@
             this.AddSkill.TabIndex = 11;
             this.AddSkill.Text = "Add Skill";
             this.AddSkill.UseVisualStyleBackColor = true;
+            this.AddSkill.Click += new System.EventHandler(this.AddSkillClick);
             // 
             // SizeLabel
             // 
@@ -302,6 +304,7 @@
             this.AddCR.TabIndex = 14;
             this.AddCR.Text = "CR/EXP";
             this.AddCR.UseVisualStyleBackColor = true;
+            this.AddCR.Click += new System.EventHandler(this.AddCRClick);
             // 
             // AddAction
             // 
@@ -331,6 +334,7 @@
             this.AddAbility.TabIndex = 16;
             this.AddAbility.Text = "Add Ability";
             this.AddAbility.UseVisualStyleBackColor = true;
+            this.AddAbility.Click += new System.EventHandler(this.AddAbilityClick);
             // 
             // Preview
             // 

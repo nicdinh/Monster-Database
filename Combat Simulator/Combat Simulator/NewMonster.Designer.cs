@@ -1822,7 +1822,7 @@
             this.Abilities.Name = "Abilities";
             this.Abilities.Size = new System.Drawing.Size(78, 34);
             this.Abilities.TabIndex = 57;
-            this.Abilities.Text = "Abilities/ Throw";
+            this.Abilities.Text = "Abilities";
             this.Abilities.UseVisualStyleBackColor = true;
             this.Abilities.Click += new System.EventHandler(this.AbilityClick);
             // 

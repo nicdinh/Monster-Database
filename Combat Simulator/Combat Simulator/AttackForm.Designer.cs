@@ -44,8 +44,8 @@
             this.MaxInput = new System.Windows.Forms.TextBox();
             this.Add = new System.Windows.Forms.Button();
             this.Done = new System.Windows.Forms.Button();
-            this.DamageDice = new System.Windows.Forms.ComboBox();
             this.DamageType = new System.Windows.Forms.ComboBox();
+            this.DamageDice = new System.Windows.Forms.ComboBox();
             this.OtherLabel = new System.Windows.Forms.Label();
             this.Info = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
@@ -281,25 +281,6 @@
             this.Done.UseVisualStyleBackColor = true;
             this.Done.Click += new System.EventHandler(this.DoneClick);
             // 
-            // DamageDice
-            // 
-            this.DamageDice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DamageDice.FormattingEnabled = true;
-            this.DamageDice.Items.AddRange(new object[] {
-            "d4",
-            "d6",
-            "d8",
-            "d10",
-            "d12",
-            "d20",
-            "d100"});
-            this.DamageDice.Location = new System.Drawing.Point(211, 127);
-            this.DamageDice.Name = "DamageDice";
-            this.DamageDice.Size = new System.Drawing.Size(98, 21);
-            this.DamageDice.TabIndex = 16;
-            // 
             // DamageType
             // 
             this.DamageType.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -324,6 +305,25 @@
             this.DamageType.Name = "DamageType";
             this.DamageType.Size = new System.Drawing.Size(99, 21);
             this.DamageType.TabIndex = 17;
+            // 
+            // DamageDice
+            // 
+            this.DamageDice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DamageDice.FormattingEnabled = true;
+            this.DamageDice.Items.AddRange(new object[] {
+            "d4",
+            "d6",
+            "d8",
+            "d10",
+            "d12",
+            "d20",
+            "d100"});
+            this.DamageDice.Location = new System.Drawing.Point(211, 127);
+            this.DamageDice.Name = "DamageDice";
+            this.DamageDice.Size = new System.Drawing.Size(98, 21);
+            this.DamageDice.TabIndex = 16;
             // 
             // OtherLabel
             // 

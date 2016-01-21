@@ -16,9 +16,7 @@ namespace Combat_Simulator
         public double Challenge;
         public Actions AllActions = new Actions();
         public Abilities AllAbility = new Abilities();
-        //public ResistanceForm Resistancewindow;
-        //public ThrowForm Throwwindow;
-        //public SkillForm Skillwindow;
+        public SkillsForm Skillswindow;
         public CRForm CRwindow;
         public SpellorAttackForm Actionwindow;
         public AbilityForm Abilitywindow;
@@ -26,6 +24,8 @@ namespace Combat_Simulator
 
         public int[] Stats = new int[6];
         public int[] Throw = new int[6];
+        public string Resistance;
+        public string Immunities;
         
         //public 
 
@@ -37,7 +37,9 @@ namespace Combat_Simulator
 
         public void AddResistancesClick(object sender, System.EventArgs e)
         {
+            ResistanceForm Resistancewindow = new ResistanceForm(ref Resistance, ref Immunities);
 
+            Resistancewindow.Show();
         }
 
         public void AddStatsClick(object sender, System.EventArgs e)
@@ -49,14 +51,16 @@ namespace Combat_Simulator
 
         public void AddThrowClick(object sender, System.EventArgs e)
         {
-            StatsForm Statswindow = new StatsForm("Throws Modifiers", ref this.Throw);
+            StatsForm Statswindow = new StatsForm("Throws Modifiers", this.Stats, ref this.Throw);
 
             Statswindow.Show();
         }
 
         public void AddSkillClick(object sender, System.EventArgs e)
         {
+            Skillswindow = new SkillsForm(this.Stats);
 
+            Skillswindow.Show();
         }
 
         public void AddCRClick(object sender, System.EventArgs e)
@@ -75,7 +79,7 @@ namespace Combat_Simulator
 
         public void AddAbilityClick(object sender, System.EventArgs e)
         {
-            Abilitywindow = new AbilityForm();
+            Abilitywindow = new AbilityForm(ref AllAbility);
 
             Abilitywindow.Show();
         }

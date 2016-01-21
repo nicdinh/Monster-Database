@@ -105,6 +105,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResistanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResistanceForm.Designer.cs">
+      <DependentUpon>ResistanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkillsForm.Designer.cs">
+      <DependentUpon>SkillsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpellorAttackForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +175,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResistanceForm.resx">
+      <DependentUpon>ResistanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillsForm.resx">
+      <DependentUpon>SkillsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SpellorAttackForm.resx">
       <DependentUpon>SpellorAttackForm.cs</DependentUpon>
     </EmbeddedResource>

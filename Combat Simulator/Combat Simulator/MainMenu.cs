@@ -21,7 +21,7 @@ namespace Combat_Simulator
         {
             // Add event handler code here.
 
-            Database test = new Database();
+            //Database test = new Database();
             CreateMonster x = new CreateMonster();
             x.Show();
 

@@ -21,6 +21,13 @@ namespace Combat_Simulator
 
         }
 
+        public AbilityForm(ref Abilities allAbility)
+        {
+            InitializeComponent();
+
+            this.AllAbility = allAbility;
+        }
+
         public void AddClick(object sender, System.EventArgs e)
         {
             // Add event handler code here.
