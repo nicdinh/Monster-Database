@@ -38,3 +38,4 @@ C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\D
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.StatsForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.ResistanceForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SkillsForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.LanguageForm.resources

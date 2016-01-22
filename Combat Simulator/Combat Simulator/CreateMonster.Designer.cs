@@ -48,6 +48,7 @@
             this.AddAbility = new System.Windows.Forms.Button();
             this.Preview = new System.Windows.Forms.Button();
             this.Done = new System.Windows.Forms.Button();
+            this.Language = new System.Windows.Forms.Button();
             this.createLayout.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.createLayout.Controls.Add(this.AddAbility, 4, 3);
             this.createLayout.Controls.Add(this.Preview, 6, 3);
             this.createLayout.Controls.Add(this.Done, 0, 4);
+            this.createLayout.Controls.Add(this.Language, 4, 1);
             this.createLayout.Location = new System.Drawing.Point(12, 12);
             this.createLayout.Name = "createLayout";
             this.createLayout.RowCount = 5;
@@ -202,11 +204,11 @@
             this.AddResistances.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.createLayout.SetColumnSpan(this.AddResistances, 8);
+            this.createLayout.SetColumnSpan(this.AddResistances, 4);
             this.AddResistances.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddResistances.Location = new System.Drawing.Point(3, 43);
             this.AddResistances.Name = "AddResistances";
-            this.AddResistances.Size = new System.Drawing.Size(807, 34);
+            this.AddResistances.Size = new System.Drawing.Size(398, 34);
             this.AddResistances.TabIndex = 8;
             this.AddResistances.Text = "Add Resistances/Immunites";
             this.AddResistances.UseVisualStyleBackColor = true;
@@ -365,6 +367,21 @@
             this.Done.UseVisualStyleBackColor = true;
             this.Done.Click += new System.EventHandler(this.DoneClick);
             // 
+            // Language
+            // 
+            this.Language.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.createLayout.SetColumnSpan(this.Language, 4);
+            this.Language.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Language.Location = new System.Drawing.Point(407, 43);
+            this.Language.Name = "Language";
+            this.Language.Size = new System.Drawing.Size(403, 34);
+            this.Language.TabIndex = 19;
+            this.Language.Text = "Languages";
+            this.Language.UseVisualStyleBackColor = true;
+            this.Language.Click += new System.EventHandler(this.LanguageClick);
+            // 
             // CreateMonster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,6 +419,7 @@
         private System.Windows.Forms.Button AddAbility;
         private System.Windows.Forms.Button Preview;
         private System.Windows.Forms.Button Done;
+        private System.Windows.Forms.Button Language;
 
     }
 }

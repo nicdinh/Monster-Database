@@ -78,6 +78,12 @@
     <Compile Include="Database.Designer.cs">
       <DependentUpon>Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="LanguageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LanguageForm.Designer.cs">
+      <DependentUpon>LanguageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LegendaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     </Compile>
     <Compile Include="ResistanceForm.Designer.cs">
       <DependentUpon>ResistanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenseForm.Designer.cs">
+      <DependentUpon>SenseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SkillsForm.cs">
       <SubType>Form</SubType>
@@ -154,6 +166,9 @@
     <EmbeddedResource Include="CRForm.resx">
       <DependentUpon>CRForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LanguageForm.resx">
+      <DependentUpon>LanguageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LegendaryForm.resx">
       <DependentUpon>LegendaryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +192,9 @@
     </Compile>
     <EmbeddedResource Include="ResistanceForm.resx">
       <DependentUpon>ResistanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SenseForm.resx">
+      <DependentUpon>SenseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SkillsForm.resx">
       <DependentUpon>SkillsForm.cs</DependentUpon>

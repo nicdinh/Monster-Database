@@ -26,6 +26,7 @@ namespace Combat_Simulator
         public int[] Throw = new int[6];
         public string Resistance;
         public string Immunities;
+        public string Languages="";
         
         //public 
 
@@ -88,8 +89,29 @@ namespace Combat_Simulator
         {
 
         }
+
+        public void LanguageClick(object sender, System.EventArgs e)
+        {
+            LanguageForm languagewindow = new LanguageForm(ref Languages);
+
+            languagewindow.Show();
+        }
+
         public void DoneClick(object sender, System.EventArgs e)
         {
+            /*
+            public Monster(string Name,string Size, int AC, int Str, int Dex, int Con, int Int, int Wis, int Char, int Max, int Health, string Speed,
+                        int Athletics, int Acrobatics, int Sleight, int Stealth, int Arcana, int History, int Investigation, int Nature,
+                        int Religion, int Animal, int Insight, int Medicine, int Perception, int Survival, int Deception, int Intimidation,
+                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense)
+             */
+
+            /*Monster newMonster = new Monster(this.NameInput.Text, int.Parse(this.ACInput.Text), Stats[0], Stats[1] ,Stats[2], Stats[3], Stats[4], Stats[5],
+                int.Parse(this.HealthInput.Text), int.Parse(this.HealthInput.Text), this.SpeedInput.Text, this.Skillswindow.Athletics, this.Skillswindow.Acrobatics,
+                this.Skillswindow.Sleight, this.Skillswindow.Stealth, this.Skillswindow.Arcana, this.Skillswindow.History, this.Skillswindow.Investigation, 
+                this.Skillswindow.Nature, this.Skillswindow.Religion, this.Skillswindow.Animal, this.Skillswindow.Insight, this.Skillswindow.Medicine,
+                this.Skillswindow.Perception, this.Skillswindow.Survival, this.Skillswindow.Deception, this.Skillswindow.Intimidation, this.Skillswindow.Performance,
+                this.Skillswindow.Persuasion, this.Languages, this.Resistance, this.Immunities, );*/
 
             this.Close();
         }
