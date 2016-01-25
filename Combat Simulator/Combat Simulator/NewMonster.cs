@@ -48,7 +48,7 @@ namespace Combat_Simulator
                 int Wis = Convert.ToInt16(row.Cells["Wis"].Value);
                 int Char = Convert.ToInt16(row.Cells["Char"].Value);
 
-                Monster newCreature = new Monster(this.NameInput.Text, this.SizeInput.Text, Convert.ToInt16(this.ACInput.Text), Str, Dex, Con, Int, Wis, Char,
+                /*Monster newCreature = new Monster(this.NameInput.Text, this.SizeInput.Text, Convert.ToInt16(this.ACInput.Text), Str, Dex, Con, Int, Wis, Char,
                                                     Convert.ToInt16(this.HealthInput.Text), Convert.ToInt16(this.HealthInput.Text), this.SpeedInput.Text,
                                                     int.Parse(this.AthleticsInput.Text), int.Parse(this.AcrobaticsInput.Text), int.Parse(this.SleightInput.Text),
                                                     int.Parse(this.StealthInput.Text), int.Parse(this.ArcanaInput.Text), int.Parse(this.HistoryInput.Text),
@@ -56,7 +56,7 @@ namespace Combat_Simulator
                                                     int.Parse(this.AnimalInput.Text), int.Parse(this.InsightInput.Text), int.Parse(this.MedicineInput.Text),
                                                     int.Parse(this.PerceptionInput.Text), int.Parse(this.SurvivalInput.Text), int.Parse(this.DeceptionInput.Text),
                                                     int.Parse(this.IntimidationInput.Text), int.Parse(this.PerformanceInput.Text), int.Parse(this.PersuasionInput.Text),
-                                                    this.LanguagesInput.Text, this.ResistanceInput.Text, this.ImmunityInput.Text, this.SenseInput.Text);
+                                                    this.LanguagesInput.Text, this.ResistanceInput.Text, this.ImmunityInput.Text, this.SenseInput.Text);*/
             }
         }
 

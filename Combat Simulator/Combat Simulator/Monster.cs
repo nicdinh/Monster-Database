@@ -72,6 +72,10 @@ namespace Combat_Simulator
         public Actions Action;
         public Abilities Ability;
 
+        public string MonsterType;
+        public string Alignment;
+
+        //Info for combat
         public string[] Effects;
         public int[] EffectDuration;
 
@@ -142,7 +146,7 @@ namespace Combat_Simulator
         public Monster(string Name,string Size, int AC, int Str, int Dex, int Con, int Int, int Wis, int Char, int Max, int Health, string Speed,
                         int Athletics, int Acrobatics, int Sleight, int Stealth, int Arcana, int History, int Investigation, int Nature,
                         int Religion, int Animal, int Insight, int Medicine, int Perception, int Survival, int Deception, int Intimidation,
-                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense)
+                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense, string MonsterType, string Alignment)
         {
             this.Name = Name;
             this.AC = AC;
@@ -155,6 +159,8 @@ namespace Combat_Simulator
             this.Max = Max;
             this.Health = Health;
             this.Speed = Speed;
+            this.MonsterType = MonsterType;
+            this.Alignment = Alignment;
 
             if(Size=="")
             {
@@ -328,6 +334,7 @@ namespace Combat_Simulator
 
             database.WriteLine("NEWMONSTER");
             database.WriteLine("Name: {0}, Size: {1}, Health: {2}, AC: {3}, Speed: {4}", this.Name, this.Size, this.Max, this.AC, this.Speed);
+            database.WriteLine("Type: {0}, Alignment: {0}", this.MonsterType, this.Alignment);
             database.WriteLine("Str: {0}, Dex: {1}, Con: {2}, Int: {3}, Wis: {4}, Char: {5}", this.Str, this.Dex, this.Con, this.Int, this.Wis, this.Char);
             database.WriteLine("Saving Throw: Str: {0}, Dex: {1}, Con: {2}, Int: {3}, Wis: {4}, Char: {5}", this.ThrowStr, this.ThrowDex, this.ThrowCon, this.ThrowInt, this.ThrowWis, this.ThrowChar);
             database.WriteLine("Resistance: {0}",this.Resistance);

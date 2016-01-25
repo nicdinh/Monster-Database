@@ -55,6 +55,8 @@ namespace Combat_Simulator
             if (this.UnderInput.Checked)
             {Languages += "Undercommon ";}
 
+            Languages += this.Other.Text;
+
             this.Close();
         }
     }

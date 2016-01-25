@@ -20,6 +20,7 @@ namespace Combat_Simulator
         public CRForm CRwindow;
         public SpellorAttackForm Actionwindow;
         public AbilityForm Abilitywindow;
+        public SenseForm sensewindow;
         //public PreviewForm Previewwindow;
 
         public int[] Stats = new int[6];
@@ -27,6 +28,8 @@ namespace Combat_Simulator
         public string Resistance;
         public string Immunities;
         public string Languages="";
+        public string MonsterType;
+        public string Alignment;
         
         //public 
 
@@ -87,7 +90,9 @@ namespace Combat_Simulator
 
         public void PreviewClick(object sender, System.EventArgs e)
         {
+            TypeForm typewindow = new TypeForm(ref this.MonsterType, ref this.Alignment);
 
+            typewindow.Show();
         }
 
         public void LanguageClick(object sender, System.EventArgs e)
@@ -97,22 +102,37 @@ namespace Combat_Simulator
             languagewindow.Show();
         }
 
+        public void SenseClick(object sender, System.EventArgs e)
+        {
+            sensewindow = new SenseForm();
+
+            sensewindow.Show();
+        }
+
+        public void TypeClick(object sender, System.EventArgs e)
+        {
+
+        }
+
         public void DoneClick(object sender, System.EventArgs e)
         {
-            /*
-            public Monster(string Name,string Size, int AC, int Str, int Dex, int Con, int Int, int Wis, int Char, int Max, int Health, string Speed,
-                        int Athletics, int Acrobatics, int Sleight, int Stealth, int Arcana, int History, int Investigation, int Nature,
-                        int Religion, int Animal, int Insight, int Medicine, int Perception, int Survival, int Deception, int Intimidation,
-                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense)
-             */
+            ErrorForm errorWindow;
+            try
+            {
+                Monster newMonster = new Monster(this.NameInput.Text, this.SizeList.Text, int.Parse(this.ACInput.Text), Stats[0], Stats[1], Stats[2], Stats[3], Stats[4], Stats[5],
+                    int.Parse(this.HealthInput.Text), int.Parse(this.HealthInput.Text), this.SpeedInput.Text, this.Skillswindow.Athletics, this.Skillswindow.Acrobatics,
+                    this.Skillswindow.Sleight, this.Skillswindow.Stealth, this.Skillswindow.Arcana, this.Skillswindow.History, this.Skillswindow.Investigation,
+                    this.Skillswindow.Nature, this.Skillswindow.Religion, this.Skillswindow.Animal, this.Skillswindow.Insight, this.Skillswindow.Medicine,
+                    this.Skillswindow.Perception, this.Skillswindow.Survival, this.Skillswindow.Deception, this.Skillswindow.Intimidation, this.Skillswindow.Performance,
+                    this.Skillswindow.Persuasion, this.Languages, this.Resistance, this.Immunities, this.sensewindow.output, this.MonsterType, this.Alignment);
 
-            /*Monster newMonster = new Monster(this.NameInput.Text, int.Parse(this.ACInput.Text), Stats[0], Stats[1] ,Stats[2], Stats[3], Stats[4], Stats[5],
-                int.Parse(this.HealthInput.Text), int.Parse(this.HealthInput.Text), this.SpeedInput.Text, this.Skillswindow.Athletics, this.Skillswindow.Acrobatics,
-                this.Skillswindow.Sleight, this.Skillswindow.Stealth, this.Skillswindow.Arcana, this.Skillswindow.History, this.Skillswindow.Investigation, 
-                this.Skillswindow.Nature, this.Skillswindow.Religion, this.Skillswindow.Animal, this.Skillswindow.Insight, this.Skillswindow.Medicine,
-                this.Skillswindow.Perception, this.Skillswindow.Survival, this.Skillswindow.Deception, this.Skillswindow.Intimidation, this.Skillswindow.Performance,
-                this.Skillswindow.Persuasion, this.Languages, this.Resistance, this.Immunities, );*/
-
+                newMonster.EnterDatabase();
+            }
+            catch(Exception error)
+            {
+                errorWindow = new ErrorForm(error, "Creating Monster Error");
+                errorWindow.Show();
+            }
             this.Close();
         }
 

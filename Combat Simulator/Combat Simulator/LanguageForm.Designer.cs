@@ -47,6 +47,8 @@
             this.SylvanInput = new System.Windows.Forms.CheckBox();
             this.UnderInput = new System.Windows.Forms.CheckBox();
             this.Done = new System.Windows.Forms.Button();
+            this.OtherLabel = new System.Windows.Forms.Label();
+            this.Other = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,17 +79,20 @@
             this.tableLayoutPanel1.Controls.Add(this.OrcInput, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.SylvanInput, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.UnderInput, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.Done, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.Done, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.OtherLabel, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.Other, 1, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(570, 266);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(570, 303);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -100,7 +105,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(564, 53);
+            this.label1.Size = new System.Drawing.Size(564, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "Languages";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,7 +117,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CommonInput.AutoSize = true;
             this.CommonInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CommonInput.Location = new System.Drawing.Point(3, 56);
+            this.CommonInput.Location = new System.Drawing.Point(3, 54);
             this.CommonInput.Name = "CommonInput";
             this.CommonInput.Size = new System.Drawing.Size(136, 34);
             this.CommonInput.TabIndex = 1;
@@ -126,7 +131,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DwarvishInput.AutoSize = true;
             this.DwarvishInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DwarvishInput.Location = new System.Drawing.Point(145, 56);
+            this.DwarvishInput.Location = new System.Drawing.Point(145, 54);
             this.DwarvishInput.Name = "DwarvishInput";
             this.DwarvishInput.Size = new System.Drawing.Size(136, 34);
             this.DwarvishInput.TabIndex = 2;
@@ -140,7 +145,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AbyssalInput.AutoSize = true;
             this.AbyssalInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AbyssalInput.Location = new System.Drawing.Point(287, 56);
+            this.AbyssalInput.Location = new System.Drawing.Point(287, 54);
             this.AbyssalInput.Name = "AbyssalInput";
             this.AbyssalInput.Size = new System.Drawing.Size(136, 34);
             this.AbyssalInput.TabIndex = 3;
@@ -154,7 +159,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CelestialInput.AutoSize = true;
             this.CelestialInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CelestialInput.Location = new System.Drawing.Point(429, 56);
+            this.CelestialInput.Location = new System.Drawing.Point(429, 54);
             this.CelestialInput.Name = "CelestialInput";
             this.CelestialInput.Size = new System.Drawing.Size(138, 34);
             this.CelestialInput.TabIndex = 4;
@@ -168,7 +173,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ElvishInput.AutoSize = true;
             this.ElvishInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElvishInput.Location = new System.Drawing.Point(3, 96);
+            this.ElvishInput.Location = new System.Drawing.Point(3, 94);
             this.ElvishInput.Name = "ElvishInput";
             this.ElvishInput.Size = new System.Drawing.Size(136, 34);
             this.ElvishInput.TabIndex = 5;
@@ -182,7 +187,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GiantInput.AutoSize = true;
             this.GiantInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GiantInput.Location = new System.Drawing.Point(145, 96);
+            this.GiantInput.Location = new System.Drawing.Point(145, 94);
             this.GiantInput.Name = "GiantInput";
             this.GiantInput.Size = new System.Drawing.Size(136, 34);
             this.GiantInput.TabIndex = 6;
@@ -196,7 +201,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DraconicInput.AutoSize = true;
             this.DraconicInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DraconicInput.Location = new System.Drawing.Point(287, 96);
+            this.DraconicInput.Location = new System.Drawing.Point(287, 94);
             this.DraconicInput.Name = "DraconicInput";
             this.DraconicInput.Size = new System.Drawing.Size(136, 34);
             this.DraconicInput.TabIndex = 7;
@@ -210,7 +215,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DeepInput.AutoSize = true;
             this.DeepInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeepInput.Location = new System.Drawing.Point(429, 96);
+            this.DeepInput.Location = new System.Drawing.Point(429, 94);
             this.DeepInput.Name = "DeepInput";
             this.DeepInput.Size = new System.Drawing.Size(138, 34);
             this.DeepInput.TabIndex = 8;
@@ -224,7 +229,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GnomishInput.AutoSize = true;
             this.GnomishInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GnomishInput.Location = new System.Drawing.Point(3, 136);
+            this.GnomishInput.Location = new System.Drawing.Point(3, 134);
             this.GnomishInput.Name = "GnomishInput";
             this.GnomishInput.Size = new System.Drawing.Size(136, 34);
             this.GnomishInput.TabIndex = 9;
@@ -238,7 +243,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GoblinInput.AutoSize = true;
             this.GoblinInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoblinInput.Location = new System.Drawing.Point(145, 136);
+            this.GoblinInput.Location = new System.Drawing.Point(145, 134);
             this.GoblinInput.Name = "GoblinInput";
             this.GoblinInput.Size = new System.Drawing.Size(136, 34);
             this.GoblinInput.TabIndex = 10;
@@ -252,7 +257,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.InfernalInput.AutoSize = true;
             this.InfernalInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfernalInput.Location = new System.Drawing.Point(287, 136);
+            this.InfernalInput.Location = new System.Drawing.Point(287, 134);
             this.InfernalInput.Name = "InfernalInput";
             this.InfernalInput.Size = new System.Drawing.Size(136, 34);
             this.InfernalInput.TabIndex = 11;
@@ -266,7 +271,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PrimordialInput.AutoSize = true;
             this.PrimordialInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrimordialInput.Location = new System.Drawing.Point(429, 136);
+            this.PrimordialInput.Location = new System.Drawing.Point(429, 134);
             this.PrimordialInput.Name = "PrimordialInput";
             this.PrimordialInput.Size = new System.Drawing.Size(138, 34);
             this.PrimordialInput.TabIndex = 12;
@@ -280,7 +285,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HalflingInput.AutoSize = true;
             this.HalflingInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HalflingInput.Location = new System.Drawing.Point(3, 176);
+            this.HalflingInput.Location = new System.Drawing.Point(3, 174);
             this.HalflingInput.Name = "HalflingInput";
             this.HalflingInput.Size = new System.Drawing.Size(136, 34);
             this.HalflingInput.TabIndex = 13;
@@ -294,7 +299,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OrcInput.AutoSize = true;
             this.OrcInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrcInput.Location = new System.Drawing.Point(145, 176);
+            this.OrcInput.Location = new System.Drawing.Point(145, 174);
             this.OrcInput.Name = "OrcInput";
             this.OrcInput.Size = new System.Drawing.Size(136, 34);
             this.OrcInput.TabIndex = 14;
@@ -308,7 +313,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SylvanInput.AutoSize = true;
             this.SylvanInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SylvanInput.Location = new System.Drawing.Point(287, 176);
+            this.SylvanInput.Location = new System.Drawing.Point(287, 174);
             this.SylvanInput.Name = "SylvanInput";
             this.SylvanInput.Size = new System.Drawing.Size(136, 34);
             this.SylvanInput.TabIndex = 15;
@@ -322,7 +327,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.UnderInput.AutoSize = true;
             this.UnderInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnderInput.Location = new System.Drawing.Point(429, 176);
+            this.UnderInput.Location = new System.Drawing.Point(429, 174);
             this.UnderInput.Name = "UnderInput";
             this.UnderInput.Size = new System.Drawing.Size(138, 34);
             this.UnderInput.TabIndex = 16;
@@ -336,18 +341,45 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.Done, 4);
             this.Done.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Done.Location = new System.Drawing.Point(3, 216);
+            this.Done.Location = new System.Drawing.Point(3, 254);
             this.Done.Name = "Done";
-            this.Done.Size = new System.Drawing.Size(564, 47);
+            this.Done.Size = new System.Drawing.Size(564, 46);
             this.Done.TabIndex = 17;
             this.Done.Text = "Done";
             this.Done.UseVisualStyleBackColor = true;
+            this.Done.Click += new System.EventHandler(this.DoneClick);
+            // 
+            // OtherLabel
+            // 
+            this.OtherLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OtherLabel.AutoSize = true;
+            this.OtherLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OtherLabel.Location = new System.Drawing.Point(3, 211);
+            this.OtherLabel.Name = "OtherLabel";
+            this.OtherLabel.Size = new System.Drawing.Size(136, 40);
+            this.OtherLabel.TabIndex = 18;
+            this.OtherLabel.Text = "Other";
+            this.OtherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Other
+            // 
+            this.Other.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.Other, 3);
+            this.Other.Location = new System.Drawing.Point(145, 214);
+            this.Other.Multiline = true;
+            this.Other.Name = "Other";
+            this.Other.Size = new System.Drawing.Size(422, 34);
+            this.Other.TabIndex = 19;
             // 
             // LanguageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 290);
+            this.ClientSize = new System.Drawing.Size(594, 327);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "LanguageForm";
             this.Text = "LanguageForm";
@@ -378,5 +410,7 @@
         private System.Windows.Forms.CheckBox SylvanInput;
         private System.Windows.Forms.CheckBox UnderInput;
         private System.Windows.Forms.Button Done;
+        private System.Windows.Forms.Label OtherLabel;
+        private System.Windows.Forms.TextBox Other;
     }
 }

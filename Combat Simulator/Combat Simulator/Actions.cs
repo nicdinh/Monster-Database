@@ -175,40 +175,40 @@ namespace Combat_Simulator
         {
             string output="";
 
-            if (this.SpellDC>0)
+            if (this.SpellDC > 0)
             {
                 output += string.Format("Spellcasting. Spell Save DC {0}, {1} to Hit with Spell Attacks\r\n", this.SpellDC, this.SpellMod);
-            }
 
-            for (int x = 0; x < 10;x++ )
-            {
-                if (SpellSlots[x]!=0)
+                for (int x = 0; x < 10; x++)
                 {
-                    if (x == 0)
+                    if (SpellSlots[x] != 0)
                     {
-                        output += "Cantrips (at will): ";
-                        for (int y=0;y<Spells[x].Length;y++)
+                        if (x == 0)
                         {
-                            output += Spells[x][y];
-                            if (y!=Spells[x].Length-1)
+                            output += "Cantrips (at will): ";
+                            for (int y = 0; y < Spells[x].Length; y++)
                             {
-                                output += ", ";
+                                output += Spells[x][y];
+                                if (y != Spells[x].Length - 1)
+                                {
+                                    output += ", ";
+                                }
                             }
+                            output += "\r\n";
                         }
-                        output += "\r\n";
-                    }
-                    else
-                    {
-                        output += string.Format("{0} Level ({1} slots): ", x, SpellSlots[x]);
-                        for (int y = 0; y < Spells[x].Length; y++)
+                        else
                         {
-                            output += Spells[x][y];
-                            if (y != Spells[x].Length - 1)
+                            output += string.Format("{0} Level ({1} slots): ", x, SpellSlots[x]);
+                            for (int y = 0; y < Spells[x].Length; y++)
                             {
-                                output += ", ";
+                                output += Spells[x][y];
+                                if (y != Spells[x].Length - 1)
+                                {
+                                    output += ", ";
+                                }
                             }
+                            output += "\r\n";
                         }
-                        output += "\r\n";
                     }
                 }
             }
@@ -251,12 +251,27 @@ namespace Combat_Simulator
                 output += temp;
             }
 
+            if (this.Legend != null)
+            {
+                output += "Legendary Actions\n";
+                output += "The monster can take {0} legendary actions, choosing from the options below.\n";
+                output += "Only one legendary action option can be used at a time and only at the end of\n";
+                output += "another creature's turn. The lich regains spend legendary actions at the start\n";
+                output += "of its turn.\n";
+
+                for (int x = 0; x < this.Legend.Length; x++)
+                {
+                    output += Legend[x].ToString();
+                }
+
+            }
+
             return output;
         }
 
         public void AddLegendary(LegendaryActions input)
         {
-            if (this.Legend.Length==0)
+            if (this.Legend==null)
             {
                 this.Legend = new LegendaryActions[1] { input };
             }
@@ -286,6 +301,24 @@ namespace Combat_Simulator
             this.Name = name;
             this.Description = description;
             this.Cost = cost;
+        }
+
+        public override string ToString()
+        {
+            string output = "";
+
+            if (Cost>1)
+            {
+                output += Name + "\n";
+            }
+            else
+            {
+                output += Name + " (Cost " + Cost + " Actions\n";
+            }
+
+            output += Description + "\n";
+
+            return output;
         }
     }
 }

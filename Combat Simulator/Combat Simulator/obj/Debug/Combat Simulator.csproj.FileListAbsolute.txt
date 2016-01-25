@@ -39,3 +39,6 @@ C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\D
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.ResistanceForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SkillsForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.LanguageForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SenseForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.ErrorForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.TypeForm.resources

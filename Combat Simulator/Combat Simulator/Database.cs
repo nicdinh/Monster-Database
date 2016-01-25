@@ -14,15 +14,17 @@ namespace Combat_Simulator
     public partial class Database : Form
     {
         public Monster[] AllCreatures;
+        public Spells[][] AllSpells= new Spells[26][];
+        public bool SpellLoad = false;
+        public bool MonsterLoad = false;
 
         public Database()
         {
-            LoadDatabase();
-            InitializeComponent();
+  
 
         }
 
-        public void LoadDatabase()
+        public void LoadDatabaseMonster()
         {
             StreamReader Rep = new StreamReader("Monsters.txt");
             Actions newAction = new Actions();
@@ -475,5 +477,198 @@ namespace Combat_Simulator
 
             Rep.Close();
         }
+
+        public void LoadDatabaseSpells()
+        {
+            StreamReader file = new StreamReader("Spells.txt");
+
+            string line = file.ReadLine();
+
+            while (line!=null)
+            {
+                int PageNum = 0;
+                string Name = "";
+                int Level = 0;
+                string CastTime = "";
+                string Range = "";
+                string Material = "";
+                bool Verbal = false;
+                bool Somatic = false;
+                bool Ritual = false;
+                bool Concentration = false;
+                string Duration = "";
+                string School = "";
+                string Info = "";
+
+                if (line == "New Spell")
+                {
+                    line = file.ReadLine();
+                    Name = line;
+                }
+                else
+                {
+                    throw new Exception("Expected New Spell line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("Page Number"))
+                {
+                    PageNum = int.Parse(line.Substring(13));
+                }
+                else
+                {
+                    throw new Exception("Expected Page Number line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("level") || line.Contains("cantrip"))
+                {
+                    if (line.Contains("ritual"))
+                    {
+                        Level = int.Parse(line.Substring(0, 1));
+                        School = line.Substring(8);
+                    }
+                    else
+                    {
+                        int schoolLength = line.Length - 16;
+                        Level = int.Parse(line.Substring(0, 1));
+                        School = line.Substring(8, schoolLength);
+                        Ritual = true;
+                    }
+                }
+                else
+                {
+                    throw new Exception("Expected Level and School line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("Cast Time"))
+                {
+                    CastTime = line.Substring(11);
+                }
+                else
+                {
+                    throw new Exception("Expected Cast Time line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("Range"))
+                {
+                    Range = line.Substring(11);
+                }
+                else
+                {
+                    throw new Exception("Expected Range line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("Components"))
+                {
+                    if (line.Substring(12,1).Contains("V"))
+                    {
+                        Verbal = true;
+                    }
+                    if(line.Substring(12,3).Contains("S"))
+                    {
+                        Somatic = true;
+                    }
+                    if(line.Contains(", M"))
+                    {
+                        Material = line.Substring(line.IndexOf("(") + 3);
+                        Material = Material.Substring(0, Material.Length - 1);
+                    }
+                }
+                else
+                {
+                    throw new Exception("Expected Components line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                if (line.Contains("Duration"))
+                {
+                    if (line.Contains("Concentration"))
+                    {
+                        Concentration = true;
+                        Duration = line.Substring(25);
+                    }
+                    else
+                    {
+                        Duration = line.Substring(10);
+                    }
+                }
+                else
+                {
+                    throw new Exception("Expected Duration line in the database.");
+                }
+
+                line = file.ReadLine();
+
+                while(line!=null || line!="New Spell")
+                {
+                    Info = line;
+                    line = file.ReadLine();
+                }
+
+                Spells newSpell = new Spells(PageNum, Name, Level, CastTime, Range, Material, Verbal, Somatic, Ritual, Concentration, Duration, School, Info);
+                AddSpell(newSpell);
+            }
+
+            file.Close();
+        }
+
+        public void AddSpell(Spells newSpell)
+        {
+            int letter = char.ToUpper(newSpell.Name[0]) -64;
+
+            if (!this.SpellLoad)
+            {
+                this.LoadDatabaseSpells();
+            }
+
+            if (this.AllSpells[letter] == null)
+            {
+                StreamWriter file = new StreamWriter("Spells.txt");
+
+                file.WriteLine("New Spell\r\n" + newSpell.ToString());
+
+                file.Close();
+            }
+            else if (!this.FindSpell(newSpell))
+            {
+                StreamWriter file = new StreamWriter("Spells.txt", true);
+
+                file.WriteLine("New Spell\r\n" + newSpell.ToString());
+
+                file.Close();
+            }
+
+        }
+
+        public void AddMonster(Monster newMonster)
+        {
+            
+        }
+
+        public bool FindSpell(Spells search)
+        {
+            int letter = char.ToUpper(search.Name[0]) -64;
+
+            for (int x = 0; x < AllSpells[letter].Length; x++ )
+            {
+                if (AllSpells[letter][x].Equals(search))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }
+

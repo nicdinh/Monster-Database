@@ -144,7 +144,7 @@ namespace Combat_Simulator
 
         private void AddClick(object sender, System.EventArgs e)
         {
-            Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.CastInput.Text,
+            Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
                 this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
                 this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
                 this.InfoInput.Text);
@@ -167,7 +167,7 @@ namespace Combat_Simulator
 
         private void DoneClick(object sender, System.EventArgs e)
         {
-            Spells newSpell = new Spells(int.Parse(this.PageNum.Text),this.NameInput.Text, this.CastInput.Text,
+            Spells newSpell = new Spells(int.Parse(this.PageNum.Text),this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
                 this.RangeInput.Text,this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
                 this.RitualInput.Checked,this.Concentration.Checked,this.DurationInput.Text,this.School.Text,
                 this.InfoInput.Text);
@@ -181,6 +181,10 @@ namespace Combat_Simulator
             AllActions.AddSpells(newSpell, this.SpellLevel);
             AllActions.AddSlots(this.Slots);
             AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+
+            Database newData = new Database();
+
+            newData.AddSpell(newSpell);
 
             this.Close();
         }

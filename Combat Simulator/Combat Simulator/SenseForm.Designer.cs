@@ -30,19 +30,21 @@
         {
             this.SenseLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.NameLabel1 = new System.Windows.Forms.Label();
+            this.SenseRangeLabel = new System.Windows.Forms.Label();
+            this.NameLabel2 = new System.Windows.Forms.Label();
+            this.SenseRangeLabel2 = new System.Windows.Forms.Label();
+            this.BlindSight = new System.Windows.Forms.CheckBox();
+            this.BlindRange = new System.Windows.Forms.TextBox();
+            this.DarkVision = new System.Windows.Forms.CheckBox();
+            this.DarkRange = new System.Windows.Forms.TextBox();
+            this.Tremorsense = new System.Windows.Forms.CheckBox();
+            this.TremorsenseRange = new System.Windows.Forms.TextBox();
+            this.TrueSight = new System.Windows.Forms.CheckBox();
+            this.TrueRange = new System.Windows.Forms.TextBox();
+            this.Done = new System.Windows.Forms.Button();
+            this.Passive = new System.Windows.Forms.Label();
+            this.PassiveInput = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +58,7 @@
             this.SenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SenseLabel.Location = new System.Drawing.Point(3, 0);
             this.SenseLabel.Name = "SenseLabel";
-            this.SenseLabel.Size = new System.Drawing.Size(553, 46);
+            this.SenseLabel.Size = new System.Drawing.Size(596, 46);
             this.SenseLabel.TabIndex = 0;
             this.SenseLabel.Text = "Sense";
             this.SenseLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,19 +74,21 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.Controls.Add(this.SenseLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.NameLabel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SenseRangeLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.NameLabel2, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SenseRangeLabel2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BlindSight, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.BlindRange, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.DarkVision, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.DarkRange, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Tremorsense, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.TremorsenseRange, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.TrueSight, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.TrueRange, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Done, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.Passive, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.PassiveInput, 1, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -93,127 +97,218 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(559, 213);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(602, 213);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label1
+            // NameLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.NameLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NameLabel1.AutoSize = true;
+            this.NameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel1.Location = new System.Drawing.Point(3, 46);
+            this.NameLabel1.Name = "NameLabel1";
+            this.NameLabel1.Size = new System.Drawing.Size(144, 40);
+            this.NameLabel1.TabIndex = 1;
+            this.NameLabel1.Text = "Sense Names";
+            this.NameLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // SenseRangeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(142, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.SenseRangeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SenseRangeLabel.AutoSize = true;
+            this.SenseRangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SenseRangeLabel.Location = new System.Drawing.Point(153, 46);
+            this.SenseRangeLabel.Name = "SenseRangeLabel";
+            this.SenseRangeLabel.Size = new System.Drawing.Size(144, 40);
+            this.SenseRangeLabel.TabIndex = 2;
+            this.SenseRangeLabel.Text = "Sense Range";
+            this.SenseRangeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SenseRangeLabel.Visible = false;
             // 
-            // label3
+            // NameLabel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(281, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.NameLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NameLabel2.AutoSize = true;
+            this.NameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel2.Location = new System.Drawing.Point(303, 46);
+            this.NameLabel2.Name = "NameLabel2";
+            this.NameLabel2.Size = new System.Drawing.Size(144, 40);
+            this.NameLabel2.TabIndex = 3;
+            this.NameLabel2.Text = "Sense Names";
+            this.NameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // SenseRangeLabel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(420, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.SenseRangeLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SenseRangeLabel2.AutoSize = true;
+            this.SenseRangeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SenseRangeLabel2.Location = new System.Drawing.Point(453, 46);
+            this.SenseRangeLabel2.Name = "SenseRangeLabel2";
+            this.SenseRangeLabel2.Size = new System.Drawing.Size(146, 40);
+            this.SenseRangeLabel2.TabIndex = 4;
+            this.SenseRangeLabel2.Text = "Sense Range";
+            this.SenseRangeLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SenseRangeLabel2.Visible = false;
             // 
-            // checkBox1
+            // BlindSight
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 89);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.BlindSight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BlindSight.AutoSize = true;
+            this.BlindSight.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BlindSight.Location = new System.Drawing.Point(3, 89);
+            this.BlindSight.Name = "BlindSight";
+            this.BlindSight.Size = new System.Drawing.Size(144, 34);
+            this.BlindSight.TabIndex = 5;
+            this.BlindSight.Text = "Blind Sight";
+            this.BlindSight.UseVisualStyleBackColor = true;
+            this.BlindSight.CheckedChanged += new System.EventHandler(this.BlindChecked);
             // 
-            // textBox1
+            // BlindRange
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.BlindRange.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BlindRange.Location = new System.Drawing.Point(153, 89);
+            this.BlindRange.Multiline = true;
+            this.BlindRange.Name = "BlindRange";
+            this.BlindRange.Size = new System.Drawing.Size(144, 34);
+            this.BlindRange.TabIndex = 6;
+            this.BlindRange.Visible = false;
             // 
-            // checkBox2
+            // DarkVision
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(281, 89);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.DarkVision.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DarkVision.AutoSize = true;
+            this.DarkVision.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DarkVision.Location = new System.Drawing.Point(303, 89);
+            this.DarkVision.Name = "DarkVision";
+            this.DarkVision.Size = new System.Drawing.Size(144, 34);
+            this.DarkVision.TabIndex = 7;
+            this.DarkVision.Text = "Dark Vision";
+            this.DarkVision.UseVisualStyleBackColor = true;
+            this.DarkVision.CheckedChanged += new System.EventHandler(this.DarkChecked);
             // 
-            // textBox2
+            // DarkRange
             // 
-            this.textBox2.Location = new System.Drawing.Point(420, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.DarkRange.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DarkRange.Location = new System.Drawing.Point(453, 89);
+            this.DarkRange.Multiline = true;
+            this.DarkRange.Name = "DarkRange";
+            this.DarkRange.Size = new System.Drawing.Size(146, 34);
+            this.DarkRange.TabIndex = 8;
+            this.DarkRange.Visible = false;
             // 
-            // checkBox3
+            // Tremorsense
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(3, 129);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 9;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.Tremorsense.AutoSize = true;
+            this.Tremorsense.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tremorsense.Location = new System.Drawing.Point(3, 129);
+            this.Tremorsense.Name = "Tremorsense";
+            this.Tremorsense.Size = new System.Drawing.Size(142, 28);
+            this.Tremorsense.TabIndex = 9;
+            this.Tremorsense.Text = "Tremorsense";
+            this.Tremorsense.UseVisualStyleBackColor = true;
+            this.Tremorsense.CheckedChanged += new System.EventHandler(this.TremorsenseChecked);
             // 
-            // textBox3
+            // TremorsenseRange
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.TremorsenseRange.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TremorsenseRange.Location = new System.Drawing.Point(153, 129);
+            this.TremorsenseRange.Multiline = true;
+            this.TremorsenseRange.Name = "TremorsenseRange";
+            this.TremorsenseRange.Size = new System.Drawing.Size(144, 34);
+            this.TremorsenseRange.TabIndex = 10;
+            this.TremorsenseRange.Visible = false;
             // 
-            // checkBox4
+            // TrueSight
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(281, 129);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(80, 17);
-            this.checkBox4.TabIndex = 11;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.TrueSight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TrueSight.AutoSize = true;
+            this.TrueSight.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrueSight.Location = new System.Drawing.Point(303, 129);
+            this.TrueSight.Name = "TrueSight";
+            this.TrueSight.Size = new System.Drawing.Size(144, 34);
+            this.TrueSight.TabIndex = 11;
+            this.TrueSight.Text = "True Sight";
+            this.TrueSight.UseVisualStyleBackColor = true;
+            this.TrueSight.CheckedChanged += new System.EventHandler(this.TrueChecked);
             // 
-            // textBox4
+            // TrueRange
             // 
-            this.textBox4.Location = new System.Drawing.Point(420, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 12;
+            this.TrueRange.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TrueRange.Location = new System.Drawing.Point(453, 129);
+            this.TrueRange.Multiline = true;
+            this.TrueRange.Name = "TrueRange";
+            this.TrueRange.Size = new System.Drawing.Size(146, 34);
+            this.TrueRange.TabIndex = 12;
+            this.TrueRange.Visible = false;
             // 
-            // button1
+            // Done
             // 
-            this.button1.Location = new System.Drawing.Point(3, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Done.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.Done, 2);
+            this.Done.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Done.Location = new System.Drawing.Point(303, 169);
+            this.Done.Name = "Done";
+            this.Done.Size = new System.Drawing.Size(296, 41);
+            this.Done.TabIndex = 13;
+            this.Done.Text = "Done";
+            this.Done.UseVisualStyleBackColor = true;
+            this.Done.Click += new System.EventHandler(this.DoneClick);
+            // 
+            // Passive
+            // 
+            this.Passive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Passive.AutoSize = true;
+            this.Passive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passive.Location = new System.Drawing.Point(3, 166);
+            this.Passive.Name = "Passive";
+            this.Passive.Size = new System.Drawing.Size(144, 47);
+            this.Passive.TabIndex = 14;
+            this.Passive.Text = "Passive Perception";
+            this.Passive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PassiveInput
+            // 
+            this.PassiveInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PassiveInput.Location = new System.Drawing.Point(153, 169);
+            this.PassiveInput.Multiline = true;
+            this.PassiveInput.Name = "PassiveInput";
+            this.PassiveInput.Size = new System.Drawing.Size(144, 41);
+            this.PassiveInput.TabIndex = 15;
             // 
             // SenseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 237);
+            this.ClientSize = new System.Drawing.Size(626, 237);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SenseForm";
             this.Text = "SenseForm";
@@ -227,18 +322,20 @@
 
         private System.Windows.Forms.Label SenseLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label NameLabel1;
+        private System.Windows.Forms.Label SenseRangeLabel;
+        private System.Windows.Forms.Label NameLabel2;
+        private System.Windows.Forms.Label SenseRangeLabel2;
+        private System.Windows.Forms.CheckBox BlindSight;
+        private System.Windows.Forms.TextBox BlindRange;
+        private System.Windows.Forms.CheckBox DarkVision;
+        private System.Windows.Forms.TextBox DarkRange;
+        private System.Windows.Forms.CheckBox Tremorsense;
+        private System.Windows.Forms.TextBox TremorsenseRange;
+        private System.Windows.Forms.CheckBox TrueSight;
+        private System.Windows.Forms.TextBox TrueRange;
+        private System.Windows.Forms.Button Done;
+        private System.Windows.Forms.Label Passive;
+        private System.Windows.Forms.TextBox PassiveInput;
     }
 }
