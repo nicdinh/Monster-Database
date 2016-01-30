@@ -481,6 +481,7 @@ namespace Combat_Simulator
         public void LoadDatabaseSpells()
         {
             StreamReader file = new StreamReader("Spells.txt");
+            SpellLoad = true;
 
             string line = file.ReadLine();
 
@@ -523,6 +524,7 @@ namespace Combat_Simulator
 
                 line = file.ReadLine();
 
+                line = line.ToLower();
                 if (line.Contains("level") || line.Contains("cantrip"))
                 {
                     if (line.Contains("ritual"))
@@ -532,10 +534,18 @@ namespace Combat_Simulator
                     }
                     else
                     {
-                        int schoolLength = line.Length - 16;
-                        Level = int.Parse(line.Substring(0, 1));
-                        School = line.Substring(8, schoolLength);
-                        Ritual = true;
+                        if (line.Contains("cantrip"))
+                        {
+                            Level = 0;
+                            School = line.Substring(0, line.IndexOf("cantrip"));
+                        }
+                        else
+                        {
+                            int schoolLength = line.Length - 16;
+                            Level = int.Parse(line.Substring(0, 1));
+                            School = line.Substring(8, schoolLength);
+                            Ritual = true;
+                        }
                     }
                 }
                 else
@@ -558,7 +568,7 @@ namespace Combat_Simulator
 
                 if (line.Contains("Range"))
                 {
-                    Range = line.Substring(11);
+                    Range = line.Substring(8);
                 }
                 else
                 {
@@ -569,11 +579,11 @@ namespace Combat_Simulator
 
                 if (line.Contains("Components"))
                 {
-                    if (line.Substring(12,1).Contains("V"))
+                    if (line.Substring(12).Contains(" V"))
                     {
                         Verbal = true;
                     }
-                    if(line.Substring(12,3).Contains("S"))
+                    if(line.Substring(12).Contains(" S"))
                     {
                         Somatic = true;
                     }
@@ -609,20 +619,25 @@ namespace Combat_Simulator
 
                 line = file.ReadLine();
 
-                while(line!=null || line!="New Spell")
+                while (line != null)
                 {
-                    Info = line;
+                    if (line == "New Spell")
+                    {
+                        break;
+                    }
+
+                    Info += line + " ";
                     line = file.ReadLine();
                 }
 
                 Spells newSpell = new Spells(PageNum, Name, Level, CastTime, Range, Material, Verbal, Somatic, Ritual, Concentration, Duration, School, Info);
-                AddSpell(newSpell);
+                AddSpell(newSpell, false);
             }
 
             file.Close();
         }
 
-        public void AddSpell(Spells newSpell)
+        public void AddSpell(Spells newSpell, bool load)
         {
             int letter = char.ToUpper(newSpell.Name[0]) -64;
 
@@ -631,21 +646,28 @@ namespace Combat_Simulator
                 this.LoadDatabaseSpells();
             }
 
-            if (this.AllSpells[letter] == null)
+            if (this.FindSpell(newSpell.Name)==null)
             {
-                StreamWriter file = new StreamWriter("Spells.txt");
+                if (this.AllSpells[letter] == null)
+                {
+                        Spells[] temp = new Spells[1] { newSpell };
+                        this.AllSpells[letter] = temp;
+                }
+                else {
+                
+                    Spells[] temp = new Spells[AllSpells[letter].Length + 1];
+                    for (int x = 0; x < AllSpells[letter].Length; x++)
+                    {
+                        temp[x] = AllSpells[letter][x];
+                    }
 
-                file.WriteLine("New Spell\r\n" + newSpell.ToString());
-
-                file.Close();
-            }
-            else if (!this.FindSpell(newSpell))
-            {
-                StreamWriter file = new StreamWriter("Spells.txt", true);
-
-                file.WriteLine("New Spell\r\n" + newSpell.ToString());
-
-                file.Close();
+                    temp[AllSpells[letter].Length + 1] = newSpell;
+                    this.AllSpells[letter] = temp;
+                }
+                if (load)
+                {
+                    AddSpellToDatabase(newSpell);
+                }
             }
 
         }
@@ -655,19 +677,31 @@ namespace Combat_Simulator
             
         }
 
-        public bool FindSpell(Spells search)
+        public void AddSpellToDatabase(Spells newSpell)
         {
-            int letter = char.ToUpper(search.Name[0]) -64;
+            StreamWriter file = new StreamWriter("Spells.txt", true);
 
-            for (int x = 0; x < AllSpells[letter].Length; x++ )
+            file.WriteLine("New Spell\r\n" + newSpell.ToString());
+
+            file.Close();
+        }
+
+        public Spells FindSpell(string search)
+        {
+            int letter = char.ToUpper(search[0]) -64;
+
+            if (AllSpells[letter] != null)
             {
-                if (AllSpells[letter][x].Equals(search))
+                for (int x = 0; x < AllSpells[letter].Length; x++)
                 {
-                    return true;
+                    if (AllSpells[letter][x].Name == search)
+                    {
+                        return AllSpells[letter][x];
+                    }
                 }
             }
 
-            return false;
+            return null;
         }
     }
 }

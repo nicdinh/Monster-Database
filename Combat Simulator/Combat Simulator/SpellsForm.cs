@@ -15,6 +15,9 @@ namespace Combat_Simulator
         public Actions AllActions;
         public int SpellLevel;
         public int[] Slots;
+        public Database newData;
+        public bool Loaded = false;
+        public Spells LoadedSpell;
 
         public SpellsForm(ref Actions Input)
         {
@@ -167,27 +170,66 @@ namespace Combat_Simulator
 
         private void DoneClick(object sender, System.EventArgs e)
         {
-            Spells newSpell = new Spells(int.Parse(this.PageNum.Text),this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
-                this.RangeInput.Text,this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
-                this.RitualInput.Checked,this.Concentration.Checked,this.DurationInput.Text,this.School.Text,
-                this.InfoInput.Text);
-
-            if (this.LevelList.Text == "Cantrip")
+            if (!Loaded)
             {
-                Slots[0] = -1;
+                Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
+                    this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
+                    this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
+                    this.InfoInput.Text);
+
+                if (this.LevelList.Text == "Cantrip")
+                {
+                    Slots[0] = -1;
+                }
+
+                AllActions.AddSpells(newSpell, this.SpellLevel);
+                AllActions.AddSlots(this.Slots);
+                if (this.ModInput.Text == "" || this.DCInput.Text == "")
+                {
+                    AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+                }
+
+
+                newData.AddSpell(newSpell, true);
             }
-
-            //AllActions.AddSpells(this.NameInput.Text, this.SpellLevel);
-            AllActions.AddSpells(newSpell, this.SpellLevel);
-            AllActions.AddSlots(this.Slots);
-            AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
-
-            Database newData = new Database();
-
-            newData.AddSpell(newSpell);
 
             this.Close();
         }
+
+        public void LoadSpell(object sender, System.EventArgs e)
+        {
+            Spells newSpell = newData.FindSpell(this.NameInput.Text);
+
+            if (newSpell != null)
+            {
+                this.LevelInput.Text = newSpell.Level.ToString();
+                this.PageNum.Text = newSpell.PageNum.ToString();
+                this.School.Text = newSpell.School;
+                this.CastInput.Text = newSpell.CastTime;
+                this.RangeInput.Text = newSpell.Range;
+                this.DurationInput.Text = newSpell.Duration;
+                this.RitualInput.Checked = newSpell.Ritual;
+                this.Concentration.Checked = newSpell.Concentration;
+                this.VerbalInput.Checked = newSpell.Verbal;
+                this.SomaticInput.Checked = newSpell.Somatic;
+                if (newSpell.Material != null)
+                {
+                    this.MaterialCheck.Checked = true;
+                    this.MaterialInput.Text = newSpell.Material;
+                }
+                this.InfoInput.Text = newSpell.Info;
+                Loaded = true;
+                LoadedSpell = newSpell;
+            }
+        }
+
+
+        private void FormLoad(object sender, System.EventArgs e)
+        {
+            newData = new Database();
+            newData.LoadDatabaseSpells();
+        }
+
 
         public void MaterialChecked(object sender, System.EventArgs e)
         {
