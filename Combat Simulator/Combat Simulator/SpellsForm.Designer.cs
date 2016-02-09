@@ -62,7 +62,6 @@
             this.DurationInput = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            this.Load += new System.EventHandler(this.FormLoad);
             // 
             // tableLayoutPanel1
             // 
@@ -192,7 +191,7 @@
             this.LevelList.Location = new System.Drawing.Point(3, 43);
             this.LevelList.Name = "LevelList";
             this.LevelList.Size = new System.Drawing.Size(86, 21);
-            this.LevelList.TabIndex = 2;
+            this.LevelList.TabIndex = 0;
             this.LevelList.TextChanged += new System.EventHandler(this.LevelChange);
             // 
             // PageLabel
@@ -265,6 +264,16 @@
             this.School.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.School.AutoCompleteCustomSource.AddRange(new string[] {
+            "Abjuration",
+            "Conjuration",
+            "Divination",
+            "Enchantment",
+            "Evocation",
+            "Illusion",
+            "Necromancy",
+            "Transmutation"});
+            this.School.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.School.FormattingEnabled = true;
             this.School.Items.AddRange(new object[] {
             "Abjuration",
@@ -274,12 +283,15 @@
             "Evocation",
             "Illusion",
             "Necromancy",
-            "Necromancy",
             "Transmutation"});
             this.School.Location = new System.Drawing.Point(463, 43);
             this.School.Name = "School";
             this.School.Size = new System.Drawing.Size(91, 21);
             this.School.TabIndex = 4;
+            this.School.TextUpdate += new System.EventHandler(this.ChangeSchool);
+            this.School.SelectedValueChanged += new System.EventHandler(this.ChangeSchool);
+            this.School.TextChanged += new System.EventHandler(this.ChangeSchool);
+            this.School.Leave += new System.EventHandler(this.ChangeSchool);
             // 
             // Done
             // 
@@ -552,6 +564,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SpellsForm";
             this.Text = "SpellsForm";
+            this.Load += new System.EventHandler(this.FormLoad);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

@@ -217,7 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(481, 146);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "CRForm";
+            this.Name = "Add CR";
             this.Text = "Challenge Rating";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -356,7 +356,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 300);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "AttackForm";
+            this.Name = "Add New Attack";
             this.Text = "Action Form";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -99,7 +99,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 62);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "SpellorAttackForm";
+            this.Name = "Adding Actions";
             this.Text = "SpellorAttackForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

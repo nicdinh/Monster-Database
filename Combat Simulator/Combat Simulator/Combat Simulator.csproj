@@ -132,6 +132,12 @@
     <Compile Include="SkillsForm.Designer.cs">
       <DependentUpon>SkillsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SpellDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellDisplayForm.Designer.cs">
+      <DependentUpon>SpellDisplayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpellorAttackForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SkillsForm.resx">
       <DependentUpon>SkillsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpellDisplayForm.resx">
+      <DependentUpon>SpellDisplayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpellorAttackForm.resx">
       <DependentUpon>SpellorAttackForm.cs</DependentUpon>

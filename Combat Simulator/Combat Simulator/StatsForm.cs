@@ -22,6 +22,7 @@ namespace Combat_Simulator
         {
             InitializeComponent();
             this.NameLabel.Text = name;
+            this.Name = "Add " + name;
             this.Stats = stats;
         }
 

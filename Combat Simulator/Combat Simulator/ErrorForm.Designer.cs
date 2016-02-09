@@ -83,7 +83,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 207);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "ErrorForm";
+            this.Name = "Error";
             this.Text = "ErrorForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

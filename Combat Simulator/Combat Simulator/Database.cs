@@ -661,7 +661,7 @@ namespace Combat_Simulator
                         temp[x] = AllSpells[letter][x];
                     }
 
-                    temp[AllSpells[letter].Length + 1] = newSpell;
+                    temp[AllSpells[letter].Length] = newSpell;
                     this.AllSpells[letter] = temp;
                 }
                 if (load)

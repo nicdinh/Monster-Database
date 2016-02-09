@@ -691,7 +691,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 400);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "SkillsForm";
+            this.Name = "Add Skills";
             this.Text = "SkillsForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

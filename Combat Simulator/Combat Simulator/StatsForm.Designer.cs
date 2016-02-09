@@ -148,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(679, 189);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "StatsForm";
+            this.Name = "Add Stats";
             this.Text = "StatsForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -528,7 +528,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(667, 341);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "ResistanceForm";
+            this.Name = "Add Resistances";
             this.Text = "ResistanceForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

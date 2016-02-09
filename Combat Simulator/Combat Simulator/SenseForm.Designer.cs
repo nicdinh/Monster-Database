@@ -310,7 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 237);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "SenseForm";
+            this.Name = "Add Senses";
             this.Text = "SenseForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

@@ -228,7 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 238);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Legendary";
+            this.Name = "Add Legendary Actions";
             this.Text = "Legendary";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

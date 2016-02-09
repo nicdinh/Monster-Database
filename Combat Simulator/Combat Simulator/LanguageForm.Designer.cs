@@ -381,7 +381,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 327);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "LanguageForm";
+            this.Name = "Add Languages";
             this.Text = "LanguageForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

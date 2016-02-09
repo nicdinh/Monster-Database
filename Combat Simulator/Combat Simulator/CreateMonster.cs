@@ -111,7 +111,9 @@ namespace Combat_Simulator
 
         public void TypeClick(object sender, System.EventArgs e)
         {
+            TypeForm typewindow = new TypeForm(ref this.MonsterType, ref this.Alignment);
 
+            typewindow.Show();
         }
 
         public void DoneClick(object sender, System.EventArgs e)

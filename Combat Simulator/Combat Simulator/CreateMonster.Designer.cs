@@ -415,6 +415,7 @@
             this.Type.TabIndex = 21;
             this.Type.Text = "Monster Type/Alignment";
             this.Type.UseVisualStyleBackColor = true;
+            this.Type.Click += new System.EventHandler(this.TypeClick);
             // 
             // CreateMonster
             // 
@@ -422,7 +423,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 225);
             this.Controls.Add(this.createLayout);
-            this.Name = "CreateMonster";
+            this.Name = "Create New Monster";
             this.Text = "CreateMonster";
             this.createLayout.ResumeLayout(false);
             this.createLayout.PerformLayout();

@@ -2,8 +2,8 @@
 Mage Hand
 Page Number: 256
 Conjuration Cantrip
-Cast Time: 1 action
-Range: 30 feet
+Cast Time: 1 Action
+Range: 30 Feet
 Components: V
 Duration: 1 minute
 A spectral, floating hand appears at a point you choose
@@ -18,6 +18,7 @@ container, or pour the contents out o f a vial. You can
 move the hand up to 30 feet each time you use it.
 The hand can’t attack, activate magic items, or carry
 more than 10 pounds.
+
 New Spell
 Prestidigitation
 Page Number: 267
@@ -46,4 +47,171 @@ your next turn.
 If you cast this spell multiple times, you can have up to
 three o f its non-instantaneous effects active at a time,
 and you can dismiss such an effect as an action.
+
+
+New Spell
+Ray of Frost
+Page Number: 271
+Evocation Cantrip
+Cast Time: 1 Action
+Range: 60 Feet
+Components: V
+Duration: Instantaneous
+A frigid beam o f blue-white light streaks toward a
+creature within range. Make a ranged spell attack
+against the target. On a hit, it takes 1d8 cold damage,
+and its speed is reduced by 10 feet until the start of
+your next turn.
+The spell’s damage increases by 1d8 when you reach
+5th level (2d8), 11th level (3d8), and 17th level (4d8).
+
+New Spell
+Detect Magic 
+Page Number: 231
+1-Level Divination (ritual)
+Cast Time: 1 Action
+Range: Self
+Components: V
+Duration: Concentration, Up to 10 minutes
+For the duration, you sense the presence o f magic
+within 30 feet o f you. If you sense magic in this way, you
+can use your action to see a faint aura around any visible
+creature or object in the area that bears magic, and you
+learn its school o f magic, if any.
+The spell can penetrate most barriers, but it is blocked
+by 1 foot o f stone, 1 inch o f common metal, a thin sheet
+of lead, or 3 feet o f wood or dirt.
+
+New Spell
+Magic Missile
+Page Number: 257
+1-Level Evocation
+Cast Time: 1 Action
+Range: 120 Feet
+Components: V
+Duration: Instantaneous
+You create three glowing darts o f magical force. Each
+dart hits a creature o f your choice that you can see
+within range. A dart deals 1d4 + 1 force damage to its
+target. The darts all strike simultaneously, and you can
+direct them to hit one creature or several.
+At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, the spell creates one
+more dart for each slot level above 1st.
+
+New Spell
+Shield
+Page Number: 275
+1-Level Abjuration
+Cast Time: 1 Reaction
+Range: Self
+Components: V
+Duration: 1 round
+An invisible barrier of magical force appears and
+protects you. Until the start o f your next turn, you have a
++5 bonus to AC, including against the triggering attack,
+and you take no damage from magic missile.
+
+New Spell
+Thunderwave
+Page Number: 283
+1-Level Evocation
+Cast Time: 1 Action
+Range: Self (15-foot cube)
+Components: V
+Duration: Instantaneous
+A wave o f thunderous force sweeps out from you. Each
+creature in a 15-foot cube originating from you must
+make a Constitution saving throw. On a failed save, a
+creature takes 2d8 thunder damage and is pushed 10
+feet away from you. On a successful save, the creature
+takes half as much damage and isn’t pushed.
+In addition, unsecured objects that are completely
+within the area o f effect are automatically pushed 10 feet
+away from you by the spell’s effect, and the spell emits a
+thunderous boom audible out to 300 feet.
+At Higher Levels. When you cast this spell using a
+spell slot o f 2nd level or higher, the damage increases by
+1d8 for each slot level above 1st.
+
+New Spell
+Detect Thoughts
+Page Number: 231
+2-Level Divination
+Cast Time: 1 Action
+Range: Self
+Components: V
+Duration: Concentration, Up to 1 minute
+For the duration, you can read the thoughts o f certain
+creatures. When you cast the spell and as your action on
+each turn until the spell ends, you can focus your mind
+on any one creature that you can see within 30 feet of
+you. If the creature you choose has an Intelligence of
+3 or lower or doesn’t speak any language, the creature
+is unaffected.
+You initially learn the surface thoughts o f the
+creature—what is most on its mind in that moment. As
+an action, you can either shift your attention to another
+creature’s thoughts or attempt to probe deeper into the
+same creature’s mind. If you probe deeper, the target
+must make a Wisdom saving throw. If it fails, you gain
+insight into its reasoning (if any), its emotional state,
+and something that looms large in its mind (such as
+something it w orries over, loves, or hates). If it succeeds,
+the spell ends. Either way, the target knows that you are
+probing into its mind, and unless you shift your attention
+to another creature’s thoughts, the creature can use
+its action on its turn to make an Intelligence check
+contested by your Intelligence check; if it succeeds,
+the spell ends.
+Questions verbally directed at the target creature
+naturally shape the course o f its thoughts, so this spell
+is particularly effective as part o f an interrogation.
+You can also use this spell to detect the presence of
+thinking creatures you can’t see. When you cast the
+spell or as your action during the duration, you can
+search for thoughts within 30 feet o f you. The spell can
+penetrate barriers, but 2 feet o f rock, 2 inches o f any
+metal other than lead, or a thin sheet o f lead blocks you.
+You can’t detect a creature with an Intelligence o f 3 or
+lower or one that doesn’t speak any language.
+Once you detect the presence o f a creature in this way,
+you can read its thoughts for the rest o f the duration as
+described above, even if you can’t see it, but it must still
+be within range.
+
+New Spell
+Invisibility
+Page Number: 254
+2-Level Illusion
+Cast Time: 1 Action
+Range: Touch
+Components: V
+Duration: Concentration, Up to 1 hour
+A creature you touch becomes invisible until the spell
+ends. Anything the target is w earing or carrying is
+invisible as long as it is on the target’s person. The spell
+ends for a target that attacks or casts a spell.
+At Higher Levels. When you cast this spell using
+a spell slot o f 3rd level or higher, you can target one
+additional creature for each slot level above 2nd.
+
+New Spell
+Melf's Acid Arrow
+Page Number: 259
+2-Level Evocation
+Cast Time: 1 Action
+Range: 90 Feet
+Components: V
+Duration: Instantaneous
+A shimmering green arrow streaks toward a target
+within range and bursts in a spray o f acid. Make a
+ranged spell attack against the target. On a hit, the
+target takes 4d4 acid damage immediately and 2d4 acid
+damage at the end o f its next turn. On a miss, the arrow
+splashes the target with acid for half as much o f the
+initial damage and no damage at the end o f its next turn.
+At Higher Levels. When you cast this spell using a
+spell slot o f 3rd level or higher, the damage (both initial
+and later) increases by 1d4 for each slot level above 2nd.
 

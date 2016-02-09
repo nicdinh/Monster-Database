@@ -145,27 +145,101 @@ namespace Combat_Simulator
             }
         }
 
+        private void ChangeSchool(object sender, System.EventArgs e)
+        {
+
+            if (this.School.Text.Length > 1)
+            {
+                string temp = this.School.Text.ToLower();
+                if (temp[0] == 'a')
+                {
+                    this.School.Text = "Abjuration";
+
+                }
+                else if (temp[0] == 'c')
+                {
+                    this.School.Text = "Conjuration";
+
+                }
+                else if (temp[0] == 'd')
+                {
+                    this.School.Text = "Divination";
+
+                }
+                else if (temp[0] == 'e')
+                {
+                    if (this.School.Text.Length > 2)
+                    {
+                        if (this.School.Text[1] == 'n')
+                        {
+                            this.School.Text = "Enchantment";
+                        }
+                        else if (this.School.Text[1] == 'v')
+                        {
+                            this.School.Text = "Evocation";
+                        }
+                    }
+
+                }
+                else if (temp[0] == 'i')
+                {
+                    this.School.Text = "Illusion";
+
+                }
+                else if (temp[0] == 'n')
+                {
+                    this.School.Text = "Necromancy";
+
+                }
+                else if (temp[0] == 't')
+                {
+                    this.School.Text = "Transmutation";
+
+                }
+            }
+        }
+
         private void AddClick(object sender, System.EventArgs e)
         {
-            Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
-                this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
-                this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
-                this.InfoInput.Text);
-
-            if (this.LevelList.Text == "Cantrip")
+            if (!Loaded)
             {
-                Slots[0] = -1;
+                Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
+                    this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
+                    this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
+                    this.InfoInput.Text);
+
+                if (this.LevelList.Text == "Cantrip")
+                {
+                    Slots[0] = -1;
+                }
+
+                AllActions.AddSpells(newSpell, this.SpellLevel);
+                AllActions.AddSlots(this.Slots);
+                if (this.ModInput.Text != "" && this.DCInput.Text != "")
+                {
+                    AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+                }
+
+
+                newData.AddSpell(newSpell, true);
+
+                //SpellDisplayForm test = new SpellDisplayForm(newSpell);
+                //test.Show();
             }
-
-            //AllActions.AddSpells(this.NameInput.Text,this.SpellLevel);
-            AllActions.AddSpells(newSpell, this.SpellLevel);
-            AllActions.AddSlots(this.Slots);
-            AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
-
             this.NameInput.Text = "";
-            this.LevelInput.Text = "";
-            this.LevelList.Text = "";
-            this.SlotsInput.Text = "";
+            this.PageNum.Text = "";
+            this.School.Text = "";
+            this.CastInput.Text = "";
+            this.RangeInput.Text = "";
+            this.DurationInput.Text = "";
+            this.RitualInput.Checked = false;
+            this.Concentration.Checked = false;
+            this.VerbalInput.Checked = false;
+            this.SomaticInput.Checked = false;
+            this.MaterialCheck.Checked = false;
+            this.MaterialInput.Visible = false;
+            this.MaterialInput.Text = "";
+            this.InfoInput.Text = "";
         }
 
         private void DoneClick(object sender, System.EventArgs e)
@@ -184,13 +258,16 @@ namespace Combat_Simulator
 
                 AllActions.AddSpells(newSpell, this.SpellLevel);
                 AllActions.AddSlots(this.Slots);
-                if (this.ModInput.Text == "" || this.DCInput.Text == "")
+                if (this.ModInput.Text != "" && this.DCInput.Text != "")
                 {
                     AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
                 }
 
 
                 newData.AddSpell(newSpell, true);
+
+                //SpellDisplayForm test = new SpellDisplayForm(newSpell);
+                //test.Show();
             }
 
             this.Close();

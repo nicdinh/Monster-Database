@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 351);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "AbilityForm";
+            this.Name = "Add New Ability";
             this.Text = "Ability";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
