@@ -168,7 +168,7 @@
             this.NameInput.Multiline = true;
             this.NameInput.Name = "NameInput";
             this.NameInput.Size = new System.Drawing.Size(86, 34);
-            this.NameInput.TabIndex = 1;
+            this.NameInput.TabIndex = 2;
             this.NameInput.Leave += new System.EventHandler(this.LoadSpell);
             // 
             // LevelList
@@ -191,7 +191,7 @@
             this.LevelList.Location = new System.Drawing.Point(3, 43);
             this.LevelList.Name = "LevelList";
             this.LevelList.Size = new System.Drawing.Size(86, 21);
-            this.LevelList.TabIndex = 0;
+            this.LevelList.TabIndex = 1;
             this.LevelList.TextChanged += new System.EventHandler(this.LevelChange);
             // 
             // PageLabel
@@ -217,7 +217,7 @@
             this.PageNum.Multiline = true;
             this.PageNum.Name = "PageNum";
             this.PageNum.Size = new System.Drawing.Size(91, 34);
-            this.PageNum.TabIndex = 2;
+            this.PageNum.TabIndex = 3;
             // 
             // SchoolLabel
             // 
@@ -242,7 +242,7 @@
             this.SlotsInput.Multiline = true;
             this.SlotsInput.Name = "SlotsInput";
             this.SlotsInput.Size = new System.Drawing.Size(86, 34);
-            this.SlotsInput.TabIndex = 3;
+            this.SlotsInput.TabIndex = 4;
             this.SlotsInput.LostFocus += new System.EventHandler(this.SlotsChange);
             // 
             // SlotsLabel
@@ -287,7 +287,7 @@
             this.School.Location = new System.Drawing.Point(463, 43);
             this.School.Name = "School";
             this.School.Size = new System.Drawing.Size(91, 21);
-            this.School.TabIndex = 4;
+            this.School.TabIndex = 5;
             this.School.TextUpdate += new System.EventHandler(this.ChangeSchool);
             this.School.SelectedValueChanged += new System.EventHandler(this.ChangeSchool);
             this.School.TextChanged += new System.EventHandler(this.ChangeSchool);
@@ -301,7 +301,7 @@
             this.Done.Location = new System.Drawing.Point(463, 243);
             this.Done.Name = "Done";
             this.Done.Size = new System.Drawing.Size(91, 39);
-            this.Done.TabIndex = 13;
+            this.Done.TabIndex = 19;
             this.Done.Text = "Done";
             this.Done.UseVisualStyleBackColor = true;
             this.Done.Click += new System.EventHandler(this.DoneClick);
@@ -314,7 +314,7 @@
             this.Add.Location = new System.Drawing.Point(371, 243);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(86, 39);
-            this.Add.TabIndex = 12;
+            this.Add.TabIndex = 18;
             this.Add.Text = "Add Another";
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.AddClick);
@@ -328,7 +328,7 @@
             this.ModInput.Multiline = true;
             this.ModInput.Name = "ModInput";
             this.ModInput.Size = new System.Drawing.Size(86, 39);
-            this.ModInput.TabIndex = 11;
+            this.ModInput.TabIndex = 17;
             // 
             // ModLabel
             // 
@@ -353,7 +353,7 @@
             this.DCInput.Multiline = true;
             this.DCInput.Name = "DCInput";
             this.DCInput.Size = new System.Drawing.Size(86, 39);
-            this.DCInput.TabIndex = 10;
+            this.DCInput.TabIndex = 16;
             // 
             // DCLabel
             // 
@@ -379,7 +379,7 @@
             this.InfoInput.Multiline = true;
             this.InfoInput.Name = "InfoInput";
             this.InfoInput.Size = new System.Drawing.Size(459, 34);
-            this.InfoInput.TabIndex = 9;
+            this.InfoInput.TabIndex = 15;
             // 
             // InfoLabel
             // 
@@ -405,7 +405,7 @@
             this.VerbalInput.Location = new System.Drawing.Point(3, 163);
             this.VerbalInput.Name = "VerbalInput";
             this.VerbalInput.Size = new System.Drawing.Size(86, 34);
-            this.VerbalInput.TabIndex = 23;
+            this.VerbalInput.TabIndex = 11;
             this.VerbalInput.Text = "Verbal";
             this.VerbalInput.UseVisualStyleBackColor = true;
             // 
@@ -419,7 +419,7 @@
             this.SomaticInput.Location = new System.Drawing.Point(95, 163);
             this.SomaticInput.Name = "SomaticInput";
             this.SomaticInput.Size = new System.Drawing.Size(86, 34);
-            this.SomaticInput.TabIndex = 24;
+            this.SomaticInput.TabIndex = 12;
             this.SomaticInput.Text = "Somatic";
             this.SomaticInput.UseVisualStyleBackColor = true;
             // 
@@ -433,7 +433,7 @@
             this.MaterialCheck.Location = new System.Drawing.Point(187, 163);
             this.MaterialCheck.Name = "MaterialCheck";
             this.MaterialCheck.Size = new System.Drawing.Size(86, 34);
-            this.MaterialCheck.TabIndex = 25;
+            this.MaterialCheck.TabIndex = 13;
             this.MaterialCheck.Text = "Material";
             this.MaterialCheck.UseVisualStyleBackColor = true;
             this.MaterialCheck.CheckedChanged += new System.EventHandler(this.MaterialChecked);
@@ -448,7 +448,7 @@
             this.MaterialInput.Multiline = true;
             this.MaterialInput.Name = "MaterialInput";
             this.MaterialInput.Size = new System.Drawing.Size(275, 34);
-            this.MaterialInput.TabIndex = 8;
+            this.MaterialInput.TabIndex = 14;
             this.MaterialInput.Visible = false;
             // 
             // RitualInput
@@ -460,7 +460,7 @@
             this.RitualInput.Location = new System.Drawing.Point(371, 123);
             this.RitualInput.Name = "RitualInput";
             this.RitualInput.Size = new System.Drawing.Size(86, 34);
-            this.RitualInput.TabIndex = 31;
+            this.RitualInput.TabIndex = 9;
             this.RitualInput.Text = "Ritual";
             this.RitualInput.UseVisualStyleBackColor = true;
             // 
@@ -474,7 +474,7 @@
             this.Concentration.Location = new System.Drawing.Point(463, 123);
             this.Concentration.Name = "Concentration";
             this.Concentration.Size = new System.Drawing.Size(91, 34);
-            this.Concentration.TabIndex = 30;
+            this.Concentration.TabIndex = 10;
             this.Concentration.Text = "Concentration";
             this.Concentration.UseVisualStyleBackColor = true;
             // 
@@ -502,7 +502,7 @@
             this.CastInput.Multiline = true;
             this.CastInput.Name = "CastInput";
             this.CastInput.Size = new System.Drawing.Size(178, 34);
-            this.CastInput.TabIndex = 5;
+            this.CastInput.TabIndex = 6;
             // 
             // RangeLabel
             // 
@@ -528,7 +528,7 @@
             this.RangeInput.Multiline = true;
             this.RangeInput.Name = "RangeInput";
             this.RangeInput.Size = new System.Drawing.Size(183, 34);
-            this.RangeInput.TabIndex = 6;
+            this.RangeInput.TabIndex = 7;
             // 
             // DurationLabel
             // 
@@ -554,7 +554,7 @@
             this.DurationInput.Multiline = true;
             this.DurationInput.Name = "DurationInput";
             this.DurationInput.Size = new System.Drawing.Size(270, 34);
-            this.DurationInput.TabIndex = 7;
+            this.DurationInput.TabIndex = 8;
             // 
             // SpellsForm
             // 

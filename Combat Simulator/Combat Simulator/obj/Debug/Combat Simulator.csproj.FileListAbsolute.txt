@@ -43,3 +43,4 @@ C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\D
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.ErrorForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.TypeForm.resources
 C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.SpellDisplayForm.resources
+C:\Users\Nicholas Dinh\Documents\Git Hub\Combat Simulator\Combat Simulator\obj\Debug\Combat_Simulator.LoadSpells.resources

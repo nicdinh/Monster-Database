@@ -43,5 +43,14 @@ namespace Combat_Simulator
             window.Show();
             this.Close();
         }
+        
+        private void OldClick(object sender, EventArgs e)
+        {
+            LoadSpells window = new LoadSpells(ref AllActions);
+
+            window.Show();
+            this.Close();
+
+        }
     }
 }

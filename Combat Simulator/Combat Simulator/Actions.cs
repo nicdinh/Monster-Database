@@ -37,11 +37,22 @@ namespace Combat_Simulator
             else
             {
                 Spells[] temp = new Spells[this.Spells[Level].Length + 1];
+                bool dup = false;
+
                 for (int x = 0; x < this.Spells[Level].Length; x++)
                 {
+                    if (this.Spells[Level][x].Equals(Input))
+                    {
+                        dup = true;
+                    }
+
                     temp[x] = this.Spells[Level][x];
                 }
-                temp[this.Spells[Level].Length] = Input;
+
+                if (!dup)
+                {
+                    temp[this.Spells[Level].Length] = Input;
+                }
 
                 this.Spells[Level] = temp;
             }

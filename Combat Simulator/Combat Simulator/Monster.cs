@@ -34,6 +34,7 @@ namespace Combat_Simulator
 
         public string Resistance;
         public string Immunity;
+        public string Conditions;
         public string Sense;
         public string Language;//4
 
@@ -146,7 +147,8 @@ namespace Combat_Simulator
         public Monster(string Name,string Size, int AC, int Str, int Dex, int Con, int Int, int Wis, int Char, int Max, int Health, string Speed,
                         int Athletics, int Acrobatics, int Sleight, int Stealth, int Arcana, int History, int Investigation, int Nature,
                         int Religion, int Animal, int Insight, int Medicine, int Perception, int Survival, int Deception, int Intimidation,
-                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense, string MonsterType, string Alignment)
+                        int Performance, int Persuasion, string Language, string Resistance, string Immunity, string Sense, string MonsterType, string Alignment,
+                        string Conditions)
         {
             this.Name = Name;
             this.AC = AC;
@@ -187,6 +189,15 @@ namespace Combat_Simulator
             else
             {
                 this.Immunity = Immunity;
+            }
+
+            if (Conditions == "")
+            {
+                this.Immunity = "None";
+            }
+            else
+            {
+                this.Immunity = Conditions;
             }
 
             if (Sense == "")

@@ -14,12 +14,14 @@ namespace Combat_Simulator
     {
         public string Resistance;
         public string Immunities;
+        public string Conditions;
 
-        public ResistanceForm(ref string resistance, ref string immunities)
+        public ResistanceForm(ref string resistance, ref string immunities, ref string conditions)
         {
             InitializeComponent();
             this.Resistance = resistance;
             this.Immunities = immunities;
+            this.Conditions = conditions;
         }
 
         public void DoneClick(object sender, System.EventArgs e)
@@ -77,6 +79,35 @@ namespace Combat_Simulator
             {this.Immunities += "Slashing ";}
             if(this.ImmThunder.Checked)
             {this.Immunities += "Thunder ";}
+
+            if(this.CondBlinded.Checked)
+            { this.Conditions += "Blinded "; }
+            if (this.CondCharmed.Checked)
+            { this.Conditions += "Charmed "; }
+            if (this.CondDeafened.Checked)
+            { this.Conditions += "Deafened "; }
+            if (this.CondFrightened.Checked)
+            { this.Conditions += "Frightened "; }
+            if (this.CondGrappled.Checked)
+            { this.Conditions += "Grappled "; }
+            if (this.CondIncapacitated.Checked)
+            { this.Conditions += "Incapacitated "; }
+            if (this.CondInvisible.Checked)
+            { this.Conditions += "Invisible "; }
+            if (this.CondParalyzed.Checked)
+            { this.Conditions += "Paralyzed "; }
+            if (this.CondPetrified.Checked)
+            { this.Conditions += "Petrified "; }
+            if (this.CondPoisoned.Checked)
+            { this.Conditions += "Poisoned "; }
+            if (this.CondProne.Checked)
+            { this.Conditions += "Prone "; }
+            if (this.CondRestrained.Checked)
+            { this.Conditions += "Restrained "; }
+            if (this.CondStunned.Checked)
+            { this.Conditions += "Stunned "; }
+            if (this.CondUnconscious.Checked)
+            { this.Conditions += "Unconscious "; }
 
             this.Close();
         }

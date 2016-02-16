@@ -53,7 +53,7 @@ namespace Combat_Simulator
                     this.Component.Text += ", S";
                 }
             }
-            if (input.Material != null)
+            if (input.Material.Length != 0)
             {
                 if (this.Component.Text == "")
                 {
@@ -64,6 +64,9 @@ namespace Combat_Simulator
                     this.Component.Text += ", M (" + input.Material + ")";
                 }
             }
+
+            this.Duration.Text = "Duration: " + input.Duration;
+            this.Info.Text = input.Info;
         }
     }
 }

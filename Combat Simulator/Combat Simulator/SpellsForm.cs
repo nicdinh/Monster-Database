@@ -275,7 +275,11 @@ namespace Combat_Simulator
 
         public void LoadSpell(object sender, System.EventArgs e)
         {
-            Spells newSpell = newData.FindSpell(this.NameInput.Text);
+            Spells newSpell = null;
+            if (this.NameInput.Text.Length>0)
+            {
+                newSpell = newData.FindSpell(this.NameInput.Text);
+            }
 
             if (newSpell != null)
             {

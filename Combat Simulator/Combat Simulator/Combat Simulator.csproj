@@ -93,6 +93,12 @@
     <Compile Include="LegendaryForm.Designer.cs">
       <DependentUpon>LegendaryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadSpells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadSpells.Designer.cs">
+      <DependentUpon>LoadSpells.cs</DependentUpon>
+    </Compile>
     <Compile Include="Monster.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LegendaryForm.resx">
       <DependentUpon>LegendaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadSpells.resx">
+      <DependentUpon>LoadSpells.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

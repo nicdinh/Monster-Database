@@ -568,7 +568,7 @@ namespace Combat_Simulator
 
                 if (line.Contains("Range"))
                 {
-                    Range = line.Substring(8);
+                    Range = line.Substring(7);
                 }
                 else
                 {
@@ -579,11 +579,11 @@ namespace Combat_Simulator
 
                 if (line.Contains("Components"))
                 {
-                    if (line.Substring(12).Contains(" V"))
+                    if (line.Substring(10).Contains(" V"))
                     {
                         Verbal = true;
                     }
-                    if(line.Substring(12).Contains(" S"))
+                    if(line.Substring(10).Contains(" S"))
                     {
                         Somatic = true;
                     }

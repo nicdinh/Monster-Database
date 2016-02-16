@@ -27,6 +27,7 @@ namespace Combat_Simulator
         public int[] Throw = new int[6];
         public string Resistance;
         public string Immunities;
+        public string Condition;
         public string Languages="";
         public string MonsterType;
         public string Alignment;
@@ -41,7 +42,7 @@ namespace Combat_Simulator
 
         public void AddResistancesClick(object sender, System.EventArgs e)
         {
-            ResistanceForm Resistancewindow = new ResistanceForm(ref Resistance, ref Immunities);
+            ResistanceForm Resistancewindow = new ResistanceForm(ref Resistance, ref Immunities, ref Condition);
 
             Resistancewindow.Show();
         }
@@ -126,7 +127,7 @@ namespace Combat_Simulator
                     this.Skillswindow.Sleight, this.Skillswindow.Stealth, this.Skillswindow.Arcana, this.Skillswindow.History, this.Skillswindow.Investigation,
                     this.Skillswindow.Nature, this.Skillswindow.Religion, this.Skillswindow.Animal, this.Skillswindow.Insight, this.Skillswindow.Medicine,
                     this.Skillswindow.Perception, this.Skillswindow.Survival, this.Skillswindow.Deception, this.Skillswindow.Intimidation, this.Skillswindow.Performance,
-                    this.Skillswindow.Persuasion, this.Languages, this.Resistance, this.Immunities, this.sensewindow.output, this.MonsterType, this.Alignment);
+                    this.Skillswindow.Persuasion, this.Languages, this.Resistance, this.Immunities, this.sensewindow.output, this.MonsterType, this.Alignment, this.Condition);
 
                 newMonster.EnterDatabase();
             }
