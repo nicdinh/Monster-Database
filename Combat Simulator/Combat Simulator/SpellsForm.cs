@@ -18,6 +18,7 @@ namespace Combat_Simulator
         public Database newData;
         public bool Loaded = false;
         public Spells LoadedSpell;
+        private ErrorForm err;
 
         public SpellsForm(ref Actions Input)
         {
@@ -246,31 +247,72 @@ namespace Combat_Simulator
         {
             if (!Loaded)
             {
-                Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
-                    this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
-                    this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
-                    this.InfoInput.Text);
-
-                if (this.LevelList.Text == "Cantrip")
+                if ((this.PageNum.Text != "" && this.NameInput.Text != "" && this.CastInput.Text != "" && this.RangeInput.Text != "" &&
+                     this.DurationInput.Text != "" && this.School.Text != "" && this.InfoInput.Text != "") &&
+                    (this.VerbalInput.Checked || this.SomaticInput.Checked || this.MaterialCheck.Checked))
                 {
-                    Slots[0] = -1;
-                }
+                    Spells newSpell = new Spells(int.Parse(this.PageNum.Text), this.NameInput.Text, this.SpellLevel, this.CastInput.Text,
+                        this.RangeInput.Text, this.MaterialInput.Text, this.VerbalInput.Checked, this.SomaticInput.Checked,
+                        this.RitualInput.Checked, this.Concentration.Checked, this.DurationInput.Text, this.School.Text,
+                        this.InfoInput.Text);
 
-                AllActions.AddSpells(newSpell, this.SpellLevel);
-                AllActions.AddSlots(this.Slots);
-                if (this.ModInput.Text != "" && this.DCInput.Text != "")
+                    if (this.LevelList.Text == "Cantrip")
+                    {
+                        Slots[0] = -1;
+                    }
+
+                    AllActions.AddSpells(newSpell, this.SpellLevel);
+                    AllActions.AddSlots(this.Slots);
+                    if (this.ModInput.Text != "" && this.DCInput.Text != "")
+                    {
+                        AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+                    }
+
+
+                    newData.AddSpell(newSpell, true);
+                    this.Close();
+                }
+                else
                 {
-                    AllActions.AddSpellMod(int.Parse(this.ModInput.Text), int.Parse(this.DCInput.Text));
+                    if (this.PageNum.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Page number not filled"), "Please enter a number");
+                    }
+                    else if (this.NameInput.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Name not filled"), "Please enter a name");
+                    }
+                    else if (this.CastInput.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Cast time not filled"), "Please enter a cast time");
+                    }
+                    else if (this.RangeInput.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Range not filled"), "Please enter a range");
+                    }
+                    else if (this.DurationInput.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Duration not filled"), "Please enter a duration");
+                    }
+                    else if (this.School.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("School not filled"), "Please enter a school");
+                    }
+                    else if (this.InfoInput.Text == "")
+                    {
+                        err = new ErrorForm(new Exception("Info not filled"), "Please enter additional info");
+                    }
+                    else if (!this.VerbalInput.Checked && !this.SomaticInput.Checked && !this.MaterialCheck.Checked)
+                    {
+                        err = new ErrorForm(new Exception("Component not filled"), "Please check either verbal, somatic or material");
+                    }
+
+                    err.Show();
                 }
-
-
-                newData.AddSpell(newSpell, true);
 
                 //SpellDisplayForm test = new SpellDisplayForm(newSpell);
                 //test.Show();
             }
-
-            this.Close();
         }
 
         public void LoadSpell(object sender, System.EventArgs e)
