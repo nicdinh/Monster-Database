@@ -1,4 +1,4 @@
-New Spell
+ÔªøNew Spell
 Mage Hand
 Page Number: 256
 Conjuration Cantrip
@@ -16,7 +16,7 @@ use the hand to manipulate an object, open an unlocked
 door or container, stow or retrieve an item from an open
 container, or pour the contents out o f a vial. You can
 move the hand up to 30 feet each time you use it.
-The hand canít attack, activate magic items, or carry
+The hand can‚Äôt attack, activate magic items, or carry
 more than 10 pounds.
 
 New Spell
@@ -30,23 +30,24 @@ Duration: Up to 1 hour
 This spell is a minor m agical trick that novice
 spellcasters use for practice. You create one of the
 following magical effects within range:
-ï You create an instantaneous, harmless sensory effect,
+‚Ä¢ You create an instantaneous, harmless sensory effect,
 such as a shower of sparks, a puff o f wind, faint musical
 notes, or an odd odor.
-ï You instantaneously light or snuff out a candle, a
+‚Ä¢ You instantaneously light or snuff out a candle, a
 torch, or a small campfire.
-ï You instantaneously clean or soil an object no larger
+‚Ä¢ You instantaneously clean or soil an object no larger
 than 1 cubic foot.
-ï You chill, warm, or flavor up to 1 cubic foot o f nonliving
+‚Ä¢ You chill, warm, or flavor up to 1 cubic foot o f nonliving
 material for 1 hour.
-ï You make a color, a small mark, or a symbol appear
+‚Ä¢ You make a color, a small mark, or a symbol appear
 on an object or a surface for 1 hour.
-ï You create a nonmagical trinket or an illusory image
+‚Ä¢ You create a nonmagical trinket or an illusory image
 that can fit in your hand and that lasts until the end o f
 your next turn.
 If you cast this spell multiple times, you can have up to
 three o f its non-instantaneous effects active at a time,
 and you can dismiss such an effect as an action.
+
 
 New Spell
 Ray of Frost
@@ -61,7 +62,7 @@ creature within range. Make a ranged spell attack
 against the target. On a hit, it takes 1d8 cold damage,
 and its speed is reduced by 10 feet until the start of
 your next turn.
-The spellís damage increases by 1d8 when you reach
+The spell‚Äôs damage increases by 1d8 when you reach
 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 New Spell
@@ -124,10 +125,10 @@ creature in a 15-foot cube originating from you must
 make a Constitution saving throw. On a failed save, a
 creature takes 2d8 thunder damage and is pushed 10
 feet away from you. On a successful save, the creature
-takes half as much damage and isnít pushed.
+takes half as much damage and isn‚Äôt pushed.
 In addition, unsecured objects that are completely
 within the area o f effect are automatically pushed 10 feet
-away from you by the spellís effect, and the spell emits a
+away from you by the spell‚Äôs effect, and the spell emits a
 thunderous boom audible out to 300 feet.
 At Higher Levels. When you cast this spell using a
 spell slot o f 2nd level or higher, the damage increases by
@@ -146,20 +147,20 @@ creatures. When you cast the spell and as your action on
 each turn until the spell ends, you can focus your mind
 on any one creature that you can see within 30 feet of
 you. If the creature you choose has an Intelligence of
-3 or lower or doesnít speak any language, the creature
+3 or lower or doesn‚Äôt speak any language, the creature
 is unaffected.
 You initially learn the surface thoughts o f the
-creatureówhat is most on its mind in that moment. As
+creature‚Äîwhat is most on its mind in that moment. As
 an action, you can either shift your attention to another
-creatureís thoughts or attempt to probe deeper into the
-same creatureís mind. If you probe deeper, the target
+creature‚Äôs thoughts or attempt to probe deeper into the
+same creature‚Äôs mind. If you probe deeper, the target
 must make a Wisdom saving throw. If it fails, you gain
 insight into its reasoning (if any), its emotional state,
 and something that looms large in its mind (such as
 something it w orries over, loves, or hates). If it succeeds,
 the spell ends. Either way, the target knows that you are
 probing into its mind, and unless you shift your attention
-to another creatureís thoughts, the creature can use
+to another creature‚Äôs thoughts, the creature can use
 its action on its turn to make an Intelligence check
 contested by your Intelligence check; if it succeeds,
 the spell ends.
@@ -167,16 +168,16 @@ Questions verbally directed at the target creature
 naturally shape the course o f its thoughts, so this spell
 is particularly effective as part o f an interrogation.
 You can also use this spell to detect the presence of
-thinking creatures you canít see. When you cast the
+thinking creatures you can‚Äôt see. When you cast the
 spell or as your action during the duration, you can
 search for thoughts within 30 feet o f you. The spell can
 penetrate barriers, but 2 feet o f rock, 2 inches o f any
 metal other than lead, or a thin sheet o f lead blocks you.
-You canít detect a creature with an Intelligence o f 3 or
-lower or one that doesnít speak any language.
+You can‚Äôt detect a creature with an Intelligence o f 3 or
+lower or one that doesn‚Äôt speak any language.
 Once you detect the presence o f a creature in this way,
 you can read its thoughts for the rest o f the duration as
-described above, even if you canít see it, but it must still
+described above, even if you can‚Äôt see it, but it must still
 be within range.
 
 New Spell
@@ -189,7 +190,7 @@ Components: V
 Duration: Concentration, Up to 1 hour
 A creature you touch becomes invisible until the spell
 ends. Anything the target is w earing or carrying is
-invisible as long as it is on the targetís person. The spell
+invisible as long as it is on the target‚Äôs person. The spell
 ends for a target that attacks or casts a spell.
 At Higher Levels. When you cast this spell using
 a spell slot o f 3rd level or higher, you can target one
@@ -213,7 +214,6 @@ initial damage and no damage at the end o f its next turn.
 At Higher Levels. When you cast this spell using a
 spell slot o f 3rd level or higher, the damage (both initial
 and later) increases by 1d4 for each slot level above 2nd.
-
 New Spell
 Mirror Image
 Page Number: 260
@@ -224,22 +224,22 @@ Components: V
 Duration: 1 minute
 Three illusory duplicates o f yourself appear in your
 space. Until the spell ends, the duplicates move with
-you and mimic your actions, shifting position so itís
+you and mimic your actions, shifting position so it‚Äôs
 impossible to track which image is real. You can use
 your action to dismiss the illusory duplicates.
 Each time a creature targets you with an attack during
-the spellís duration, roll a d20 to determine whether the
+the spell‚Äôs duration, roll a d20 to determine whether the
 attack instead targets one o f your duplicates.
 If you have three duplicates, you must roll a 6 or
-higher to change the attackís target to a duplicate. With
+higher to change the attack‚Äôs target to a duplicate. With
 two duplicates, you must roll an 8 or higher. With one
 duplicate, you must roll an 11 or higher.
-A duplicateís AC equals 10 + your Dexterity modifier.
+A duplicate‚Äôs AC equals 10 + your Dexterity modifier.
 If an attack hits a duplicate, the duplicate is destroyed. A
 duplicate can be destroyed only by an attack that hits it.
 It ignores all other damage and effects. The spell ends
 when all three duplicates are destroyed.
-A creature is unaffected by this spell if it canít see, if it
+A creature is unaffected by this spell if it can‚Äôt see, if it
 relies on senses other than sight, such as blindsight, or
 if it can perceive illusions as false, as with truesight.
 
@@ -255,7 +255,7 @@ You hurl a bubble of acid. Choose one creature within
 range, or choose two creatures within range that are
 within 5 feet o f each other. A target must succeed on a
 Dexterity saving throw or take 1d6 acid damage.
-This spellís damage increases by 1d6 when you reach
+This spell‚Äôs damage increases by 1d6 when you reach
 5th level (2d6), 11th level (3d6), and 17th level (4d6).
 
 New Spell
@@ -268,10 +268,10 @@ Components: V
 Duration: 8 Hours
 Your spell bolsters your allies with toughness and
 resolve. Choose up to three creatures within range.
-Each targetís hit point maximum and current hit points
+Each target‚Äôs hit point maximum and current hit points
 increase by 5 for the duration.
 At Higher Levels. When you cast this spell using
-a spell slot o f 3rd level or higher, a targetís hit points
+a spell slot o f 3rd level or higher, a target‚Äôs hit points
 increase by an additional 5 for each slot level above 2nd.
 
 New Spell
@@ -287,7 +287,7 @@ a door, a window, or an area within range that is no
 larger than a 20-foot cube. Until the spell ends, an alarm
 alerts you whenever a Tiny or larger creature touches
 or enters the w arded area. When you cast the spell, you
-can designate creatures that w onít set off the alarm. You
+can designate creatures that w on‚Äôt set off the alarm. You
 also choose whether the alarm is mental or audible.
 A mental alarm alerts you with a ping in your mind
 if you are within 1 mile o f the warded area. This ping
@@ -319,9 +319,9 @@ weight, facial features, sound o f your voice, hair length,
 coloration, and distinguishing characteristics, if any.
 You can make yourself appear as a member o f another
 race, though none o f your statistics change. You also
-canít appear as a creature o f a different size than you,
+can‚Äôt appear as a creature o f a different size than you,
 and your basic shape stays the same; if you're bipedal,
-you canít use this spell to become quadrupedal, for
+you can‚Äôt use this spell to become quadrupedal, for
 instance. At any time for the duration of the spell, you
 can use your action to change your appearance in
 this way again.
@@ -344,10 +344,10 @@ Components: V
 Duration: 24 hours
 This spell lets you convince a beast that you mean it no
 harm. Choose a beast that you can see within range.
-It must see and hear you. If the beastís Intelligence is
+It must see and hear you. If the beast‚Äôs Intelligence is
 4 or higher, the spell fails. Otherwise, the beast must
 succeed on a W isdom saving throw or be charmed
-by you for the spellís duration. If you or one of your
+by you for the spell‚Äôs duration. If you or one of your
 companions harms the target, the spells ends.
 At Higher Levels. When you cast this spell using
 a spell slot o f 2nd level or higher, you can affect one
@@ -365,9 +365,9 @@ By means o f this spell, you use an animal to deliver a
 message. Choose a Tiny beast you can see within range,
 such as a squirrel, a blue jay, or a bat. You specify a
 location, which you must have visited, and a recipient
-who matches a general description, such as ìa man or
-woman dressed in the uniform o f the town guardî or ìa
-red-haired dwarf wearing a pointed hat.î You also speak
+who matches a general description, such as ‚Äúa man or
+woman dressed in the uniform o f the town guard‚Äù or ‚Äúa
+red-haired dwarf wearing a pointed hat.‚Äù You also speak
 a message o f up to twenty-five words. The target beast
 travels for the duration o f the spell toward the specified
 location, covering about 50 miles per 24 hours for a
@@ -376,7 +376,7 @@ When the messenger arrives, it delivers your m essage
 to the creature that you described, replicating the sound
 o f your voice. The messenger speaks only to a creature
 matching the description you gave. If the messenger
-doesnít reach its destination before the spell ends, the
+doesn‚Äôt reach its destination before the spell ends, the
 message is lost, and the beast makes its way back to
 where you cast this spell.
 At Higher Levels. If you cast this spell using a spell
@@ -400,7 +400,7 @@ transform affected creatures into new forms.
 The transformation lasts for the duration for each
 target, or until the target drops to 0 hit points or dies.
 You can choose a different form for each target. A
-targetís game statistics are replaced by the statistics o f
+target‚Äôs game statistics are replaced by the statistics o f
 the chosen beast, though the target retains its alignment
 and Intelligence, Wisdom, and Charisma scores. The
 target assumes the hit points o f its new form, and when
@@ -408,12 +408,12 @@ it reverts to its normal form, it returns to the number
 o f hit points it had before it transformed. If it reverts as
 a result o f dropping to 0 hit points, any excess damage
 carries over to its normal form. As long as the excess
-damage doesnít reduce the creatureís normal form to 0
-hit points, it isnít knocked unconscious. The creature is
+damage doesn‚Äôt reduce the creature‚Äôs normal form to 0
+hit points, it isn‚Äôt knocked unconscious. The creature is
 limited in the actions it can perform by the nature o f its
-new form, and it canít speak or cast spells.
-The targetís gear melds into the new form. The target
-canít activate, wield, or otherwise benefit from any o f
+new form, and it can‚Äôt speak or cast spells.
+The target‚Äôs gear melds into the new form. The target
+can‚Äôt activate, wield, or otherwise benefit from any o f
 its equipment.
 
 New Spell
@@ -429,7 +429,7 @@ o f bones or a corpse o f a Medium or Small humanoid
 within range. Your spell imbues the target with a foul
 mimicry o f life, raising it as an undead creature. The
 target becomes a skeleton if you chose bones or a
-zombie if you chose a corpse (the DM has the creatureís
+zombie if you chose a corpse (the DM has the creature‚Äôs
 game statistics).
 On each o f your turns, you can use a bonus action
 to mentally command any creature you made with
@@ -444,7 +444,7 @@ creature only defends itself against hostile creatures.
 Once given an order, the creature continues to follow it
 until its task is complete.
 The creature is under your control for 24 hours,
-after which it stops obeying any command youíve given
+after which it stops obeying any command you‚Äôve given
 it. To maintain control o f the creature for another
 24 hours, you must cast this spell on the creature
 again before the current 24-hour period ends. This
@@ -475,7 +475,7 @@ Objects come to life at your command. Choose up to
 ten nonmagical objects within range that are not being
 worn or carried. Medium targets count as two objects,
 Large targets count as four objects, Huge targets
-count as eight objects. You canít animate any object
+count as eight objects. You can‚Äôt animate any object
 larger than Huge. Each target animates and becomes a
 creature under your control until the spell ends or until
 reduced to 0 hit points.
@@ -555,7 +555,7 @@ than a 200-foot cube. Then specify a kind o f intelligent
 creature, such as red dragons, goblins, or vampires.
 You invest the target with an aura that either attracts or
 repels the specified creatures for the duration. Choose
-antipathy or sympathy as the auraís effect.
+antipathy or sympathy as the aura‚Äôs effect.
 Antipathy. The enchantment causes creatures o f the
 kind you designated to feel an intense urge to leave the
 area and avoid the target. When such a creature can
@@ -564,9 +564,9 @@ must succeed on a W isdom saving throw or b ecome
 frightened. The creature remains frightened while it can
 see the target or is within 60 feet of it. While frightened
 by the target, the creature must use its movement to
-move to the nearest safe spot from which it canít see
+move to the nearest safe spot from which it can‚Äôt see
 the target. If the creature moves more than 60 feet from
-the target and canít see it, the creature is no longer
+the target and can‚Äôt see it, the creature is no longer
 frightened, but the creature becomes frightened again if
 it regains sight o f the target or moves within 60 feet o f it.
 Sympathy. The enchantment causes the specified
@@ -576,7 +576,7 @@ creature can see the target or comes within 60 feet o f it,
 the creature must succeed on a W isdom saving throw or
 use its movement on each o f its turns to enter the area
 or move within reach o f the target. When the creature
-has done so, it canít w illingly m ove away from the target.
+has done so, it can‚Äôt w illingly m ove away from the target.
 If the target damages or otherwise harms an affected
 creature, the affected creature can make a W isdom
 saving throw to end the effect, as described below.
@@ -607,8 +607,8 @@ which has normal vision and darkvision out to 30 feet.
 The eye can look in every direction.
 As an action, you can move the eye up to 30 feet in
 any direction. There is no limit to how far away from
-you the eye can move, but it canít enter another plane
-o f existence. A solid barrier b locks the eyeís movement,
+you the eye can move, but it can‚Äôt enter another plane
+o f existence. A solid barrier b locks the eye‚Äôs movement,
 but the eye can pass through an opening as small as 1
 inch in diameter.
 
@@ -670,7 +670,7 @@ You invoke the power o f Hadar, the Dark Hunger.
 Tendrils o f dark energy erupt from you and batter all
 creatures within 10 feet o f you. Each creature in that
 area must m ake a Strength saving throw. On a failed
-save, a target takes 2d6 necrotic damage and canít take
+save, a target takes 2d6 necrotic damage and can‚Äôt take
 reactions until its next turn. On a successful save, the
 creature takes half damage, but suffers no other effect.
 At Higher Levels. When you cast this spell using a
@@ -690,7 +690,7 @@ project your astral bodies into the Astral Plane (the
 spell fails and the casting is wasted if you are already
 on that plane). The material body you leave behind is
 unconscious and in a state o f suspended animation; it
-doesnít need food or air and doesnít age.
+doesn‚Äôt need food or air and doesn‚Äôt age.
 Your astral body resembles your m ortal form in
 almost every way, replicating your game statistics and
 possessions. The principal difference is the addition o f
@@ -698,8 +698,8 @@ a silvery cord that extends from between your shoulder
 blades and trails behind you, fading to invisibility after
 1 foot. This cord is your tether to your material body. As
 long as the tether remains intact, you can find your way
-home. If the cord is cutósomething that can happen
-only when an effect specifically states that it doesóyour
+home. If the cord is cut‚Äîsomething that can happen
+only when an effect specifically states that it does‚Äîyour
 soul and body are separated, killing you instantly.
 Your astral form can freely travel through the Astral
 Plane and can pass through portals there leading to any
@@ -717,10 +717,10 @@ and it awakens.
 The spell might also end early for you or one o f your
 companions. A successful dispel magic spell used
 against an astral or physical body ends the spell for that
-creature. If a creatureís original body or its astral form
+creature. If a creature‚Äôs original body or its astral form
 drops to 0 hit points, the spell ends for that creature. If
 the spell ends and the silver cord is intact, the cord pulls
-the creatureís astral form back to its body, ending its
+the creature‚Äôs astral form back to its body, ending its
 state o f suspended animation.
 If you are returned to your body prematurely, your
 companions remain in their astral forms and must find
@@ -741,11 +741,11 @@ divining tool, you receive an omen from an otherworldly
 entity about the results o f a specific course o f action that
 you plan to take within the next 30 minutes. The DM
 chooses from the following possible omens:
-ï Weal, for good results
-ï Woe, for bad results
-ï Weal and woe, for both good and bad results
-ï Nothing, for results that arenít especially good or bad
-The spell doesnít take into account any possible
+‚Ä¢ Weal, for good results
+‚Ä¢ Woe, for bad results
+‚Ä¢ Weal and woe, for both good and bad results
+‚Ä¢ Nothing, for results that aren‚Äôt especially good or bad
+The spell doesn‚Äôt take into account any possible
 circumstances that might change the outcome, such
 as the casting o f additional spells or the loss or gain
 o f a companion.
@@ -781,303 +781,9 @@ Duration: Concentration, Up to 10 minutes
 Purifying energy radiates from you in an aura with a
 30-foot radius. Until the spell ends, the aura moves
 with you, centered on you. Each nonhostile creature
-in the aura (including you) canít become diseased,
+in the aura (including you) can‚Äôt become diseased,
 has resistance to poison damage, and has advantage
 on saving throws against effects that cause any o f the
 following conditions: blinded, charmed, deafened,
 frightened, paralyzed, poisoned, and stunned.
-New Spell
-Aura of Vitality
-Page Number: 216
-3-Level Evocation
-Cast Time: 1 Action
-Range: Self (30-foot radius)
-Components: V
-Duration: Concentration, Up to 1 minute
-Healing energy radiates from you in an aura with a
-30-foot radius. Until the spell ends, the aura moves with
-you, centered on you. You can use a bonus action to
-cause one creature in the aura (including you) to regain
-2d6 hit points.
 
-New Spell
-Awaken
-Page Number: 216
-5-Level Transmutation
-Cast Time: 8 Hours
-Range: Touch
-Components: V
-Duration: Instantaneous
-After spending the casting time tracing magical
-pathways within a precious gemstone, you touch a Huge
-or smaller beast or plant. The target must have either
-no Intelligence score or an Intelligence o f 3 or less. The
-target gains an Intelligence o f 10. The target also gains
-the ability to speak one language you know. If the target
-is a plant, it gains the ability to move its limbs, roots,
-vines, creepers, and so forth, and it gains senses similar
-to a humanís. Your DM chooses statistics appropriate
-for the awakened plant, such as the statistics for the
-awakened shrub or the awakened tree.
-The awakened beast or plant is charmed by you for
-30 days or until you or your companions do anything
-harmful to it. When the charmed condition ends,
-the awakened creature chooses whether to remain
-friendly to you, based on how you treated it while
-it w as charmed.
-
-New Spell
-Bane
-Page Number: 216
-1-Level Enchantment
-Cast Time: 1 Action
-Range: 30 Feet
-Components: V
-Duration: Concentration, Up to 1 minute
-Up to three creatures o f your choice that you can see
-within range must make Charisma saving throws.
-Whenever a target that fails this saving throw makes
-an attack roll or a saving throw before the spell ends,
-the target must roll a d4 and subtract the number rolled
-from the attack roll or saving throw.
-At Higher Levels. When you cast this spell using
-a spell slot o f 2nd level or higher, you can target one
-additional creature for each slot level above 1st.
-
-New Spell
-Banishing Smite
-Page Number: 216
-5-Level Abjuration
-Cast Time: 1 Bonus Action
-Range: Self
-Components: V
-Duration: Concentration, Up to 1 minute
-The next time you hit a creature with a w eapon attack
-before this spell ends, your weapon crackles with force,
-and the attack deals an extra 5d10 force damage to the
-target. Additionally, if this attack reduces the target
-to 50 hit points or fewer, you banish it. If the target is
-native to a different plane o f existence than the one
-youíre on, the target disappears, returning to its home
-plane. If the target is native to the plane youíre on, the
-creature vanishes into a harmless demiplane. While
-there, the target is incapacitated. It remains there until
-the spell ends, at which point the target reappears in the
-space it left or in the nearest unoccupied space if that
-space is occupied.
-
-New Spell
-Banishment
-Page Number: 217
-4-Level Abjuration
-Cast Time: 1 Action
-Range: 60 Feet
-Components: V
-Duration: Concentration, Up to 1 minute
-You attempt to send one creature that you can see
-within range to another plane o f existence. The
-target must succeed on a Charisma saving throw
-or be banished.
-If the target is native to the plane o f existence youíre
-on, you banish the target to a harmless demiplane.
-While there, the target is incapacitated. The target
-remains there until the spell ends, at which point the
-target reappears in the space it left or in the nearest
-unoccupied space if that space is occupied.
-If the target is native to a different plane of existence
-than the one youíre on, the target is banished with
-a faint popping noise, returning to its home plane.
-If the spell ends before 1 minute has passed, the
-target reappears in the space it left or in the nearest
-unoccupied space if that space is occupied. Otherwise,
-the target doesn't return.
-At Higher Levels. When you cast this spell using
-a spell slot o f 5th level or higher, you can target one
-additional creature for each slot level above 4th.
-
-New Spell
-Barkskin
-Page Number: 217
-2-Level Transmutation
-Cast Time: 1 Action
-Range: Touch
-Components: V
-Duration: Concentration, Up to 1 hour
-You touch a w illing creature. Until the spell ends, the
-targetís skin has a rough, bark-like appearance, and the
-targetís AC canít be less than 16, regardless of what kind
-o f armor it is wearing.
-
-New Spell
-Beacon of Hope
-Page Number: 217
-3-Level Abjuration
-Cast Time: 1 Action
-Range: 30 Feet
-Components: V
-Duration: Concentration, Up to 1 minute
-This spell bestows hope and vitality. Choose any
-number of creatures within range. For the duration,
-each target has advantage on W isdom saving throws
-and death saving throws, and regains the maximum
-number of hit points possible from any healing.
-
-New Spell
-Beast Sense
-Page Number: 217
-2-Level Divination (ritual)
-Cast Time: 1 Action
-Range: Touch
-Components: S
-Duration: Concentration, Up to 1 hour
-You touch a w illing beast. For the duration o f the spell,
-you can use your action to see through the beastís eyes
-and hear what it hears, and continue to do so until
-you use your action to return to your normal senses.
-While perceiving through the beastís senses, you gain
-the benefits o f any special senses possessed by that
-creature, though you are blinded and deafened to your
-own surroundings.
-
-New Spell
-Bestow Curse
-Page Number: 218
-3-Level Necromancy
-Cast Time: 1 Action
-Range: Touch
-Components: V
-Duration: Concentration, Up to 1 minute
-You touch a creature, and that creature must succeed
-on a W isdom saving throw or become cursed for the
-duration o f the spell. When you cast this spell, choose
-the nature o f the curse from the following options:
-ï Choose one ability score. While cursed, the target
-has disadvantage on ability checks and saving throws
-made with that ability score.
-ï While cursed, the target has disadvantage on attack
-rolls against you.
-ï While cursed, the target must make a W isdom saving
-throw at the start o f each o f its turns. If it fails, it
-wastes its action that turn doing nothing.
-ï While the target is cursed, your attacks and spells
-deal an extra 1d8 necrotic damage to the target.
-A remove curse spell ends this effect. At the DMís
-option, you may choose an alternative curse effect, but
-it should be no more powerful than those described
-above. The DM has final say on such a curseís effect.
-At Higher Levels. If you cast this spell using a spell
-slot o f 4th level or higher, the duration is concentration,
-up to 10 minutes. If you use a spell slot o f 5th level or
-higher, the duration is 8 hours. If you use a spell slot of
-7th level or higher, the duration is 24 hours. If you use
-a 9th level spell slot, the spell lasts until it is dispelled.
-Using a spell slot o f 5th level or higher grants a duration
-that doesnít require concentration.
-
-New Spell
-Bigby's Hand
-Page Number: 218
-5-Level Evocation
-Cast Time: 1 Action
-Range: 120 Feet
-Components: V, S, M(an eggshell and a snakeskin glove)
-Duration: Concentration, Up to 1 minute
-You create a Large hand o f shimmering, translucent
-force in an unoccupied space that you can see within
-range. The hand lasts for the spellís duration, and it
-moves at your command, mimicking the movements of
-your own hand.
-The hand is an object that has AC 20 and hit points
-equal to your hit point maximum. If it drops to 0 hit
-points, the spell ends. It has a Strength o f 26 (+8) and a
-Dexterity o f 10 (+0). The hand doesnít fill its space.
-When you cast the spell and as a bonus action on your
-subsequent turns, you can move the hand up to 60 feet
-and then cause one o f the following effects with it.
-Clenched Fist. The hand strikes one creature or
-object within 5 feet o f it. Make a melee spell attack for
-the hand using your game statistics. On a hit, the target
-takes 4d8 force damage.
-Forceful Hand. The hand attempts to push a creature
-within 5 feet of it in a direction you choose. Make
-a check with the handís Strength contested by the
-Strength (Athletics) check o f the target. If the target is
-Medium or smaller, you have advantage on the check. If
-you succeed, the hand pushes the target up to 5 feet plus
-a number of feet equal to five times your spellcasting
-ability modifier. The hand moves with the target to
-remain within 5 feet o f it.
-Grasping Hand. The hand attempts to grapple a Huge
-or smaller creature within 5 feet o f it. You use the handís
-Strength score to resolve the grapple. If the target is
-Medium or smaller, you have advantage on the check.
-While the hand is grappling the target, you can use a
-bonus action to have the hand crush it. When you do
-so, the target takes bludgeoning damage equal to 2d6 +
-your spellcasting ability modifier.
-Interposing Hand. The hand interposes itself
-between you and a creature you choose until you give
-the hand a different command. The hand moves to stay
-between you and the target, providing you with half
-cover against the target. The target can't move through
-the handís space if its Strength score is less than or
-equal to the handís Strength score. If its Strength score
-is higher than the handís Strength score, the target can
-move toward you through the handís space, but that
-space is difficult terrain for the target.
-At Higher Levels. When you cast this spell using a
-spell slot of 6th level or higher, the damage from the
-clenched fist option increases by 2d8 and the damage
-from the grasping hand increases by 2d6 for each slot
-level above 5th.
-
-New Spell
-Blade Barrier
-Page Number: 218
-6-Level Evocation
-Cast Time: 1 Action
-Range: 90 Feet
-Components: V
-Duration: Concentration, Up to 10 minutes
-You create a vertical wall o f whirling, razor-sharp blades
-made o f magical energy. The wall appears within range
-and lasts for the duration. You can make a straight wall
-up to 100 feet long, 20 feet high, and 5 feet thick, or a
-ringed wall up to 60 feet in diameter, 20 feet high, and
-5 feet thick. The wall provides three-quarters cover to
-creatures behind it, and its space is difficult terrain.
-When a creature enters the w allís area for the first
-time on a turn or starts its turn there, the creature must
-make a Dexterity saving throw. On a failed save, the
-creature takes 6 d10 slashing damage. On a successful
-save, the creature takes half as much damage.
-
-New Spell
-Blade Ward
-Page Number: 218
-Abjuration Cantrip
-Cast Time: 1 Action
-Range: Self
-Components: V
-Duration: 1 round
-You extend your hand and trace a sigil of warding in the
-air. Until the end o f your next turn, you have resistance
-against bludgeoning, piercing, and slashing damage
-dealt by weapon attacks.
-
-New Spell
-Bless
-Page Number: 219
-1-Level Enchantment
-Cast Time: 1 Action
-Range: 30 Feet
-Components: V
-Duration: Concentration, Up to 1 minute
-You bless up to three creatures o f your choice within
-range. Whenever a target makes an attack roll or a
-saving throw before the spell ends, the target can roll
-a d4 and add the number rolled to the attack roll or
-saving throw.
-A t Higher Levels. When you cast this spell using
-a spell slot o f 2nd level or higher, you can target one
-additional creature for each slot level above 1st.

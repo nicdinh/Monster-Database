@@ -17,6 +17,7 @@ namespace Combat_Simulator
         public Spells[][] AllSpells= new Spells[26][];
         public bool SpellLoad = false;
         public bool MonsterLoad = false;
+        ErrorForm err;
 
         public Database()
         {
@@ -482,6 +483,7 @@ namespace Combat_Simulator
         {
             StreamReader file = new StreamReader("Spells.txt");
             SpellLoad = true;
+            int location = 1;
 
             string line = file.ReadLine();
 
@@ -503,26 +505,53 @@ namespace Combat_Simulator
 
                 if (line == "New Spell")
                 {
+                    location++;
                     line = file.ReadLine();
                     Name = line;
+                    location++;
+                    line = file.ReadLine();
                 }
                 else
                 {
-                    throw new Exception("Expected New Spell line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location),
+                        "Expected New Spell line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 if (line.Contains("Page Number"))
                 {
                     PageNum = int.Parse(line.Substring(13));
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Page Number line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location + "\nAt spell: " + Name),
+                         "Expected Page Number line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 line = line.ToLower();
                 if (line.Contains("level") || line.Contains("cantrip"))
@@ -547,35 +576,74 @@ namespace Combat_Simulator
                             Ritual = true;
                         }
                     }
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Level and School line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location + "\nAt spell: " + Name),
+                         "Expected Level and School.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 if (line.Contains("Cast Time"))
                 {
                     CastTime = line.Substring(11);
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Cast Time line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location + "\nAt spell: " + Name),
+                         "Expected Cast Time line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 if (line.Contains("Range"))
                 {
                     Range = line.Substring(7);
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Range line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location),
+                         "Expected Range line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 if (line.Contains("Components"))
                 {
@@ -592,13 +660,26 @@ namespace Combat_Simulator
                         Material = line.Substring(line.IndexOf("(") + 3);
                         Material = Material.Substring(0, Material.Length - 1);
                     }
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Components line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location + "\nAt spell: " + Name),
+                         "Expected Components line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 if (line.Contains("Duration"))
                 {
@@ -611,13 +692,26 @@ namespace Combat_Simulator
                     {
                         Duration = line.Substring(10);
                     }
+                    location++;
+                    line = file.ReadLine();
                 }
-                else
+                else if (line != "New Spell")
                 {
-                    throw new Exception("Expected Duration line in the database.");
-                }
+                    err = new ErrorForm(new Exception("Error in line " + location + "\nAt spell: " + Name),
+                         "Expected Duration line.");
+                    err.Show();
+                    while (line != null)
+                    {
+                        if (line == "New Spell")
+                        {
+                            break;
+                        }
 
-                line = file.ReadLine();
+                        Info += line + " ";
+                        location++;
+                        line = file.ReadLine();
+                    }
+                }
 
                 while (line != null)
                 {
@@ -627,6 +721,7 @@ namespace Combat_Simulator
                     }
 
                     Info += line + " ";
+                    location++;
                     line = file.ReadLine();
                 }
 
